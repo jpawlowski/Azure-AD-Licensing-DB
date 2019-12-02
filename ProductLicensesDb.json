@@ -1,0 +1,1353 @@
+{
+    "meta": {
+        "ConfigSchemaVersion": 1,
+        "StringId": "ProductLicensesDb",
+        "referenceUrl": "https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/licensing-service-plan-reference"
+    },
+    "items": [
+        {
+            "Name": "AUDIO CONFERENCING",
+            "Aliases": [],
+            "StringId": "MCOMEETADV",
+            "Guid": "0c266dff-15dd-4b49-8397-2bb16070ed52",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "MCOMEETADV"
+            ]
+        },
+        {
+            "Name": "AZURE ACTIVE DIRECTORY BASIC",
+            "Aliases": [],
+            "StringId": "AAD_BASIC",
+            "Guid": "2b9c8e7c-319c-43a2-a2a0-48c5c6161de7",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "AAD_BASIC"
+            ]
+        },
+        {
+            "Name": "AZURE ACTIVE DIRECTORY PREMIUM P1",
+            "Aliases": [],
+            "StringId": "AAD_PREMIUM",
+            "Guid": "078d2b04-f1bd-4111-bbd4-b4b1b354cef4",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "AAD_PREMIUM",
+                "ADALLOM_S_DISCOVERY",
+                "MFA_PREMIUM"
+            ]
+        },
+        {
+            "Name": "AZURE ACTIVE DIRECTORY PREMIUM P2",
+            "Aliases": [],
+            "StringId": "AAD_PREMIUM_P2",
+            "Guid": "84a661c4-e949-4bd2-a560-ed7766fcaf2b",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "AAD_PREMIUM",
+                "AAD_PREMIUM_P2",
+                "ADALLOM_S_DISCOVERY",
+                "MFA_PREMIUM"
+            ]
+        },
+        {
+            "Name": "AZURE INFORMATION PROTECTION PLAN 1",
+            "Aliases": [],
+            "StringId": "RIGHTSMANAGEMENT",
+            "Guid": "c52ea49f-fe5d-4e95-93ba-1de91d380f89",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "RMS_S_ENTERPRISE",
+                "RMS_S_PREMIUM"
+            ]
+        },
+        {
+            "Name": "DYNAMICS 365 CUSTOMER ENGAGEMENT PLAN EDITION",
+            "Aliases": [],
+            "StringId": "DYN365_ENTERPRISE_PLAN1",
+            "Guid": "ea126fc5-a19e-42e2-a731-da9d437bffcf",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "DYN365_ENTERPRISE_P1",
+                "FLOW_DYN_P2",
+                "NBENTERPRISE",
+                "POWERAPPS_DYN_P2",
+                "PROJECT_CLIENT_SUBSCRIPTION",
+                "SHAREPOINT_PROJECT",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC"
+            ]
+        },
+        {
+            "Name": "DYNAMICS 365 FOR CUSTOMER SERVICE EDITION",
+            "Aliases": [],
+            "StringId": "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
+            "Guid": "749742bf-0d37-4158-a120-33567104deeb",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
+                "FLOW_DYN_APPS",
+                "NBENTERPRISE",
+                "POWERAPPS_DYN_APPS",
+                "PROJECT_ESSENTIALS",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC"
+            ]
+        },
+        {
+            "Name": "DYNAMICS 365 FOR FINANCIALS BUSINESS EDITION",
+            "Aliases": [],
+            "StringId": "DYN365_FINANCIALS_BUSINESS_SKU",
+            "Guid": "cc13a803-544e-4464-b4e4-6d6169a138fa",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "DYN365_FINANCIALS_BUSINESS",
+                "FLOW_DYN_APPS",
+                "POWERAPPS_DYN_APPS"
+            ]
+        },
+        {
+            "Name": "DYNAMICS 365 FOR SALES AND CUSTOMER SERVICE EDITION",
+            "Aliases": [],
+            "StringId": "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
+            "Guid": "8edc2cf8-6438-4fa9-b6e3-aa1660c640cc",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "DYN365_ENTERPRISE_P1",
+                "FLOW_DYN_APPS",
+                "NBENTERPRISE",
+                "POWERAPPS_DYN_APPS",
+                "PROJECT_ESSENTIALS",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC"
+            ]
+        },
+        {
+            "Name": "DYNAMICS 365 FOR SALES EDITION",
+            "Aliases": [],
+            "StringId": "DYN365_ENTERPRISE_SALES",
+            "Guid": "1e1a282c-9c54-43a2-9310-98ef728faace",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "DYN365_ENTERPRISE_SALES",
+                "FLOW_DYN_APPS",
+                "NBENTERPRISE",
+                "POWERAPPS_DYN_APPS",
+                "PROJECT_ESSENTIALS",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC"
+            ]
+        },
+        {
+            "Name": "DYNAMICS 365 FOR TEAM MEMBERS EDITION",
+            "Aliases": [],
+            "StringId": "DYN365_ENTERPRISE_TEAM_MEMBERS",
+            "Guid": "8e7a3d30-d97d-43ab-837c-d7701cef83dc",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "DYN365_Enterprise_Talent_Attract_TeamMember",
+                "DYN365_Enterprise_Talent_Onboard_TeamMember",
+                "DYN365_ENTERPRISE_TEAM_MEMBERS",
+                "Dynamics_365_for_Operations_Team_members",
+                "Dynamics_365_for_Retail_Team_members",
+                "Dynamics_365_for_Talent_Team_members",
+                "FLOW_DYN_TEAM",
+                "POWERAPPS_DYN_TEAM",
+                "PROJECT_ESSENTIALS",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC"
+            ]
+        },
+        {
+            "Name": "DYNAMICS 365 UNF OPS PLAN ENT EDITION",
+            "Aliases": [],
+            "StringId": "Dynamics_365_for_Operations",
+            "Guid": "ccba3cfe-71ef-423a-bd87-b6df3dce59a9",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "DDYN365_CDS_DYN_P2",
+                "DYN365_TALENT_ENTERPRISE",
+                "Dynamics_365_for_Operations",
+                "Dynamics_365_for_Retail",
+                "Dynamics_365_Hiring_Free_PLAN",
+                "Dynamics_365_Onboarding_Free_PLAN",
+                "FLOW_DYN_P2",
+                "POWERAPPS_DYN_P2"
+            ]
+        },
+        {
+            "Name": "ENTERPRISE MOBILITY + SECURITY E3",
+            "Aliases": [],
+            "StringId": "EMS",
+            "Guid": "efccb6f7-5641-4e0e-bd10-b4976e1bf68e",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "Secondary",
+            "ServicePlans": [
+                "AAD_PREMIUM",
+                "ADALLOM_S_DISCOVERY",
+                "INTUNE_A",
+                "MFA_PREMIUM",
+                "RMS_S_ENTERPRISE",
+                "RMS_S_PREMIUM"
+            ]
+        },
+        {
+            "Name": "ENTERPRISE MOBILITY + SECURITY E5",
+            "Aliases": [],
+            "StringId": "EMSPREMIUM",
+            "Guid": "b05e124f-c7cc-45a0-a6aa-8cf78c946968",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "Secondary",
+            "ServicePlans": [
+                "AAD_PREMIUM",
+                "AAD_PREMIUM_P2",
+                "ADALLOM_S_STANDALONE",
+                "ATA",
+                "INTUNE_A",
+                "MFA_PREMIUM",
+                "RMS_S_ENTERPRISE",
+                "RMS_S_PREMIUM",
+                "RMS_S_PREMIUM2"
+            ]
+        },
+        {
+            "Name": "EXCHANGE ONLINE (PLAN 1)",
+            "Aliases": [],
+            "StringId": "EXCHANGESTANDARD",
+            "Guid": "4b9405b0-7788-4568-add1-99614e613b69",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "EXCHANGE_S_STANDARD"
+            ]
+        },
+        {
+            "Name": "EXCHANGE ONLINE (PLAN 2)",
+            "Aliases": [],
+            "StringId": "EXCHANGEENTERPRISE",
+            "Guid": "19ec0d23-8335-4cbd-94ac-6050e30712fa",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "EXCHANGE_S_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "EXCHANGE ONLINE ARCHIVING FOR EXCHANGE ONLINE",
+            "Aliases": [],
+            "StringId": "EXCHANGEARCHIVE_ADDON",
+            "Guid": "ee02fd1b-340e-4a4b-b355-4a514e4c8943",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "EXCHANGE_S_ARCHIVE_ADDON"
+            ]
+        },
+        {
+            "Name": "EXCHANGE ONLINE ARCHIVING FOR EXCHANGE SERVER",
+            "Aliases": [],
+            "StringId": "EXCHANGEARCHIVE",
+            "Guid": "90b5e015-709a-4b8b-b08e-3200f994494c",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "EXCHANGE_S_ARCHIVE"
+            ]
+        },
+        {
+            "Name": "EXCHANGE ONLINE ESSENTIALS",
+            "Aliases": [],
+            "StringId": "EXCHANGEESSENTIALS",
+            "Guid": "7fc0182e-d107-4556-8329-7caaa511197b",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "EXCHANGE_S_STANDARD"
+            ]
+        },
+        {
+            "Name": "EXCHANGE ONLINE ESSENTIALS",
+            "Aliases": [],
+            "StringId": "EXCHANGE_S_ESSENTIALS",
+            "Guid": "e8f81a67-bd96-4074-b108-cf193eb9433b",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "EXCHANGE_S_ESSENTIALS"
+            ]
+        },
+        {
+            "Name": "EXCHANGE ONLINE KIOSK",
+            "Aliases": [],
+            "StringId": "EXCHANGEDESKLESS",
+            "Guid": "80b2d799-d2ba-4d2a-8842-fb0d0f3a4b82",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "EXCHANGE_S_DESKLESS"
+            ]
+        },
+        {
+            "Name": "EXCHANGE ONLINE POP",
+            "Aliases": [],
+            "StringId": "EXCHANGETELCO",
+            "Guid": "cb0a98a8-11bc-494c-83d9-c1b1ac65327e",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "EXCHANGE_B_STANDARD"
+            ]
+        },
+        {
+            "Name": "INTUNE",
+            "Aliases": [],
+            "StringId": "INTUNE_A",
+            "Guid": "061f9ace-7d42-4136-88ac-31dc755f143f",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "INTUNE_A"
+            ]
+        },
+        {
+            "Name": "MICROSOFT 365 BUSINESS",
+            "Aliases": [],
+            "StringId": "SPB",
+            "Guid": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46",
+            "Shortname": "M365B",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "AAD_SMB",
+                "BPOS_S_TODO_1",
+                "Deskless",
+                "EXCHANGE_S_ARCHIVE_ADDON",
+                "EXCHANGE_S_STANDARD",
+                "FLOW_O365_P1",
+                "FORMS_PLAN_E1",
+                "INTUNE_A",
+                "INTUNE_SMBIZ",
+                "MCOSTANDARD",
+                "MICROSOFTBOOKINGS",
+                "O365_SB_Relationship_Management",
+                "OFFICE_BUSINESS",
+                "POWERAPPS_O365_P1",
+                "PROJECTWORKMANAGEMENT",
+                "RMS_S_ENTERPRISE",
+                "RMS_S_PREMIUM",
+                "SHAREPOINTSTANDARD",
+                "SHAREPOINTWAC",
+                "STREAM_O365_E1",
+                "SWAY",
+                "TEAMS1",
+                "WINBIZ",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "MICROSOFT 365 E3",
+            "Aliases": [],
+            "StringId": "SPE_E3",
+            "Guid": "05e9a617-0261-4cee-bb44-138d3ef5d965",
+            "Shortname": "M365E3",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "AAD_PREMIUM",
+                "ADALLOM_S_DISCOVERY",
+                "BPOS_S_TODO_2",
+                "Deskless",
+                "EXCHANGE_S_ENTERPRISE",
+                "FLOW_O365_P2",
+                "FORMS_PLAN_E3",
+                "INTUNE_A",
+                "MCOSTANDARD",
+                "MFA_PREMIUM",
+                "OFFICESUBSCRIPTION",
+                "POWERAPPS_O365_P2",
+                "PROJECTWORKMANAGEMENT",
+                "RMS_S_ENTERPRISE",
+                "RMS_S_PREMIUM",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC",
+                "STREAM_O365_E3",
+                "SWAY",
+                "TEAMS1",
+                "WIN10_PRO_ENT_SUB",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "Microsoft 365 E5",
+            "Aliases": [],
+            "StringId": "SPE_E5",
+            "Guid": "06ebc4ee-1bb5-47dd-8120-11324bc54e06",
+            "Shortname": "M365E5",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "MCOMEETADV",
+                "AAD_PREMIUM",
+                "AAD_PREMIUM_P2",
+                "ATA",
+                "RMS_S_PREMIUM",
+                "RMS_S_PREMIUM2",
+                "LOCKBOX_ENTERPRISE",
+                "EXCHANGE_S_ENTERPRISE",
+                "FLOW_O365_P3",
+                "INFORMATION_BARRIERS",
+                "MIP_S_CLP2",
+                "MIP_S_CLP1",
+                "MYANALYTICS_P2",
+                "RMS_S_ENTERPRISE",
+                "MFA_PREMIUM",
+                "ADALLOM_S_STANDALONE",
+                "WINDEFATP",
+                "FORMS_PLAN_E5",
+                "INTUNE_A",
+                "KAIZALA_STANDALONE",
+                "EXCHANGE_ANALYTICS",
+                "PROJECTWORKMANAGEMENT",
+                "MICROSOFT_SEARCH",
+                "Deskless",
+                "STREAM_O365_E5",
+                "TEAMS1",
+                "INTUNE_O365",
+                "EQUIVIO_ANALYTICS",
+                "ADALLOM_S_O365",
+                "ATP_ENTERPRISE",
+                "THREAT_INTELLIGENCE",
+                "PAM_ENTERPRISE",
+                "OFFICESUBSCRIPTION",
+                "SHAREPOINTWAC",
+                "MCOEV",
+                "BI_AZURE_P2",
+                "POWERAPPS_O365_P3",
+                "PREMIUM_ENCRYPTION",
+                "SHAREPOINTENTERPRISE",
+                "MCOSTANDARD",
+                "SWAY",
+                "BPOS_S_TODO_3",
+                "WHITEBOARD_PLAN3",
+                "WIN10_PRO_ENT_SUB",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "Microsoft 365 E3_USGOV_DOD",
+            "Aliases": [],
+            "StringId": "SPE_E3_USGOV_DOD",
+            "Guid": "d61d61cc-f992-433f-a577-5bd016037eeb",
+            "Shortname": "M365E3GOV1",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "AAD_PREMIUM",
+                "RMS_S_PREMIUM",
+                "EXCHANGE_S_ENTERPRISE",
+                "RMS_S_ENTERPRISE",
+                "MFA_PREMIUM",
+                "INTUNE_A",
+                "STREAM_O365_E3",
+                "TEAMS_AR_DOD",
+                "OFFICESUBSCRIPTION",
+                "SHAREPOINTWAC",
+                "SHAREPOINTENTERPRISE",
+                "MCOSTANDARD"
+            ]
+        },
+        {
+            "Name": "Microsoft 365 E3_USGOV_GCCHIGH",
+            "Aliases": [],
+            "StringId": "SPE_E3_USGOV_GCCHIGH",
+            "Guid": "ca9d1dd9-dfe9-4fef-b97c-9bc1ea3c3658",
+            "Shortname": "M365E3GOV2",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "AAD_PREMIUM",
+                "RMS_S_PREMIUM",
+                "ADALLOM_S_DISCOVERY",
+                "EXCHANGE_S_ENTERPRISE",
+                "RMS_S_ENTERPRISE",
+                "MFA_PREMIUM",
+                "INTUNE_A",
+                "PROJECTWORKMANAGEMENT",
+                "STREAM_O365_E3",
+                "TEAMS_AR_GCCHIGH",
+                "OFFICESUBSCRIPTION",
+                "SHAREPOINTWAC",
+                "SHAREPOINTENTERPRISE",
+                "MCOSTANDARD"
+            ]
+        },
+        {
+            "Name": "Microsoft 365 F1",
+            "Aliases": [],
+            "StringId": "SPE_F1",
+            "Guid": "66b55226-6b4f-492c-910c-a3b7a3c9d993",
+            "Shortname": "M365F1",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "AAD_PREMIUM",
+                "RMS_S_PREMIUM",
+                "ADALLOM_S_DISCOVERY",
+                "EXCHANGE_S_DESKLESS",
+                "FLOW_O365_S1",
+                "RMS_S_ENTERPRISE",
+                "MFA_PREMIUM",
+                "FORMS_PLAN_K",
+                "INTUNE_A",
+                "KAIZALA_O365_P1",
+                "MICROSOFT_SEARCH",
+                "Deskless",
+                "STREAM_O365_K",
+                "TEAMS1",
+                "INTUNE_O365",
+                "OFFICEMOBILE_SUBSCRIPTION",
+                "SHAREPOINTWAC",
+                "POWERAPPS_O365_S1",
+                "SHAREPOINTDESKLESS",
+                "MCOIMP",
+                "SWAY",
+                "BPOS_S_TODO_FIRSTLINE",
+                "WHITEBOARD_FIRSTLINE1",
+                "WIN10_ENT_LOC_F1",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "MICROSOFT DYNAMICS CRM ONLINE BASIC",
+            "Aliases": [],
+            "StringId": "CRMPLAN2",
+            "Guid": "906af65a-2970-46d5-9b58-4e9aa50f0657",
+            "Shortname": "DYN365B",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "CRMPLAN2",
+                "FLOW_DYN_APPS",
+                "POWERAPPS_DYN_APPS"
+            ]
+        },
+        {
+            "Name": "MICROSOFT DYNAMICS CRM ONLINE",
+            "Aliases": [],
+            "StringId": "CRMSTANDARD",
+            "Guid": "d17b27af-3f49-4822-99f9-56a661538792",
+            "Shortname": "DYN365",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "CRMSTANDARD",
+                "FLOW_DYN_APPS",
+                "MDM_SALES_COLLABORATION",
+                "NBPROFESSIONALFORCRM",
+                "POWERAPPS_DYN_APPS"
+            ]
+        },
+        {
+            "Name": "MS IMAGINE ACADEMY",
+            "Aliases": [],
+            "StringId": "IT_ACADEMY_AD",
+            "Guid": "ba9a34de-4489-469d-879c-0f0f145321cd",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "IT_ACADEMY_AD"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 BUSINESS",
+            "Aliases": [],
+            "StringId": "O365_BUSINESS",
+            "Guid": "cdd28e44-67e3-425e-be4c-737fab2899d3",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "FORMS_PLAN_E1",
+                "OFFICE_BUSINESS",
+                "ONEDRIVESTANDARD",
+                "SHAREPOINTWAC",
+                "SWAY"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 BUSINESS",
+            "Aliases": [],
+            "StringId": "SMB_BUSINESS",
+            "Guid": "b214fe43-f5a3-4703-beeb-fa97188220fc",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "FORMS_PLAN_E1",
+                "OFFICE_BUSINESS",
+                "ONEDRIVESTANDARD",
+                "SHAREPOINTWAC",
+                "SWAY"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 BUSINESS ESSENTIALS",
+            "Aliases": [],
+            "StringId": "O365_BUSINESS_ESSENTIALS",
+            "Guid": "3b555118-da6a-4418-894f-7df1e2096870",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "BPOS_S_TODO_1",
+                "EXCHANGE_S_STANDARD",
+                "FLOW_O365_P1",
+                "FORMS_PLAN_E1",
+                "MCOSTANDARD",
+                "OFFICEMOBILE_SUBSCRIPTION",
+                "POWERAPPS_O365_P1",
+                "PROJECTWORKMANAGEMENT",
+                "SHAREPOINTSTANDARD",
+                "SHAREPOINTWAC",
+                "SWAY",
+                "TEAMS1",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 BUSINESS ESSENTIALS",
+            "Aliases": [],
+            "StringId": "SMB_BUSINESS_ESSENTIALS",
+            "Guid": "dab7782a-93b1-4074-8bb1-0e61318bea0b",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "BPOS_S_TODO_1",
+                "EXCHANGE_S_STANDARD",
+                "FLOW_O365_P1",
+                "FORMS_PLAN_E1",
+                "MCOSTANDARD",
+                "OFFICEMOBILE_SUBSCRIPTION",
+                "POWERAPPS_O365_P1",
+                "PROJECTWORKMANAGEMENT",
+                "SHAREPOINTSTANDARD",
+                "SHAREPOINTWAC",
+                "SWAY",
+                "TEAMS1",
+                "YAMMER_MIDSIZE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 BUSINESS PREMIUM",
+            "Aliases": [],
+            "StringId": "O365_BUSINESS_PREMIUM",
+            "Guid": "f245ecc8-75af-4f8e-b61f-27d8114de5f3",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "BPOS_S_TODO_1",
+                "Deskless",
+                "EXCHANGE_S_STANDARD",
+                "FLOW_O365_P1",
+                "FORMS_PLAN_E1",
+                "MCOSTANDARD",
+                "MICROSOFTBOOKINGS",
+                "O365_SB_Relationship_Management",
+                "OFFICE_BUSINESS",
+                "POWERAPPS_O365_P1",
+                "PROJECTWORKMANAGEMENT",
+                "SHAREPOINTSTANDARD",
+                "SHAREPOINTWAC",
+                "SWAY",
+                "TEAMS1",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 BUSINESS PREMIUM",
+            "Aliases": [],
+            "StringId": "SMB_BUSINESS_PREMIUM",
+            "Guid": "ac5cef5d-921b-4f97-9ef3-c99076e5470f",
+            "Shortname": "",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "BPOS_S_TODO_1",
+                "Deskless",
+                "EXCHANGE_S_STANDARD",
+                "FLOW_O365_P1",
+                "FORMS_PLAN_E1",
+                "MCOSTANDARD",
+                "MICROSOFTBOOKINGS",
+                "O365_SB_Relationship_Management",
+                "OFFICE_BUSINESS",
+                "POWERAPPS_O365_P1",
+                "PROJECTWORKMANAGEMENT",
+                "SHAREPOINTSTANDARD",
+                "SHAREPOINTWAC",
+                "SWAY",
+                "TEAMS1",
+                "YAMMER_MIDSIZE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 E1",
+            "Aliases": [],
+            "StringId": "STANDARDPACK",
+            "Guid": "18181a46-0d4e-45cd-891e-60aabd171b4e",
+            "Shortname": "O365E1",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "BPOS_S_TODO_1",
+                "Deskless",
+                "EXCHANGE_S_STANDARD",
+                "FLOW_O365_P1",
+                "FORMS_PLAN_E1",
+                "MCOSTANDARD",
+                "OFFICEMOBILE_SUBSCRIPTION",
+                "POWERAPPS_O365_P1",
+                "PROJECTWORKMANAGEMENT",
+                "SHAREPOINTSTANDARD",
+                "SHAREPOINTWAC",
+                "STREAM_O365_E1",
+                "SWAY",
+                "TEAMS1",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 E2",
+            "Aliases": [],
+            "StringId": "STANDARDWOFFPACK",
+            "Guid": "6634e0ce-1a9f-428c-a498-f84ec7b8aa2e",
+            "Shortname": "O365E2",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "BPOS_S_TODO_1",
+                "Deskless",
+                "EXCHANGE_S_STANDARD",
+                "FLOW_O365_P1",
+                "FORMS_PLAN_E1",
+                "MCOSTANDARD",
+                "POWERAPPS_O365_P1",
+                "PROJECTWORKMANAGEMENT",
+                "SHAREPOINTSTANDARD",
+                "SHAREPOINTWAC",
+                "STREAM_O365_E1",
+                "SWAY",
+                "TEAMS1",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 E3",
+            "Aliases": [],
+            "StringId": "ENTERPRISEPACK",
+            "Guid": "6fd2c87f-b296-42f0-b197-1e91e994b900",
+            "Shortname": "O365E3",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "BPOS_S_TODO_2",
+                "Deskless",
+                "EXCHANGE_S_ENTERPRISE",
+                "FLOW_O365_P2",
+                "FORMS_PLAN_E3",
+                "MCOSTANDARD",
+                "OFFICESUBSCRIPTION",
+                "POWERAPPS_O365_P2",
+                "PROJECTWORKMANAGEMENT",
+                "RMS_S_ENTERPRISE",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC",
+                "STREAM_O365_E3",
+                "SWAY",
+                "TEAMS1",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 E3 DEVELOPER",
+            "Aliases": [],
+            "StringId": "DEVELOPERPACK",
+            "Guid": "189a915c-fe4f-4ffa-bde4-85b9628d07a0",
+            "Shortname": "O365E3D",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "BPOS_S_TODO_3",
+                "EXCHANGE_S_ENTERPRISE",
+                "FLOW_O365_P2",
+                "FORMS_PLAN_E5",
+                "MCOSTANDARD",
+                "OFFICESUBSCRIPTION",
+                "POWERAPPS_O365_P2",
+                "PROJECTWORKMANAGEMENT",
+                "SHAREPOINT_S_DEVELOPER",
+                "SHAREPOINTWAC_DEVELOPER",
+                "STREAM_O365_E5",
+                "SWAY",
+                "TEAMS1"
+            ]
+        },
+        {
+            "Name": "Office 365 E3_USGOV_DOD",
+            "Aliases": [],
+            "StringId": "ENTERPRISEPACK_USGOV_DOD",
+            "Guid": "b107e5a3-3e60-4c0d-a184-a7e4395eb44c",
+            "Shortname": "O365E3USG1",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "EXCHANGE_S_ENTERPRISE",
+                "RMS_S_ENTERPRISE",
+                "STREAM_O365_E3",
+                "TEAMS_AR_DOD",
+                "OFFICESUBSCRIPTION",
+                "SHAREPOINTWAC",
+                "SHAREPOINTENTERPRISE",
+                "MCOSTANDARD"
+            ]
+        },
+        {
+            "Name": "Office 365 E3_USGOV_GCCHIGH",
+            "Aliases": [],
+            "StringId": "ENTERPRISEPACK_USGOV_GCCHIGH",
+            "Guid": "aea38a85-9bd5-4981-aa00-616b411205bf",
+            "Shortname": "O365E3USG2",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "EXCHANGE_S_ENTERPRISE",
+                "RMS_S_ENTERPRISE",
+                "PROJECTWORKMANAGEMENT",
+                "STREAM_O365_E3",
+                "TEAMS_AR_GCCHIGH",
+                "OFFICESUBSCRIPTION",
+                "SHAREPOINTWAC",
+                "SHAREPOINTENTERPRISE",
+                "MCOSTANDARD"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 E4",
+            "Aliases": [],
+            "StringId": "ENTERPRISEWITHSCAL",
+            "Guid": "1392051d-0cb9-4b7a-88d5-621fee5e8711",
+            "Shortname": "O365E4",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "BPOS_S_TODO_2",
+                "Deskless",
+                "EXCHANGE_S_ENTERPRISE",
+                "FLOW_O365_P2",
+                "FORMS_PLAN_E3",
+                "MCOSTANDARD",
+                "MCOVOICECONF",
+                "OFFICESUBSCRIPTION",
+                "POWERAPPS_O365_P2",
+                "PROJECTWORKMANAGEMENT",
+                "RMS_S_ENTERPRISE",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC",
+                "STREAM_O365_E3",
+                "SWAY",
+                "TEAMS1",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 E5",
+            "Aliases": [],
+            "StringId": "ENTERPRISEPREMIUM",
+            "Guid": "c7df2760-2c81-4ef7-b578-5b5392b571df",
+            "Shortname": "O365E5",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "ADALLOM_S_O365",
+                "BI_AZURE_P2",
+                "BPOS_S_TODO_3",
+                "Deskless",
+                "EQUIVIO_ANALYTICS",
+                "EXCHANGE_ANALYTICS",
+                "EXCHANGE_S_ENTERPRISE",
+                "FLOW_O365_P3",
+                "FORMS_PLAN_E5",
+                "LOCKBOX_ENTERPRISE",
+                "MCOEV",
+                "MCOMEETADV",
+                "MCOSTANDARD",
+                "OFFICESUBSCRIPTION",
+                "POWERAPPS_O365_P3",
+                "PROJECTWORKMANAGEMENT",
+                "RMS_S_ENTERPRISE",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC",
+                "STREAM_O365_E5",
+                "SWAY",
+                "TEAMS1",
+                "THREAT_INTELLIGENCE",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 E5 WITHOUT AUDIO CONFERENCING",
+            "Aliases": [],
+            "StringId": "ENTERPRISEPREMIUM_NOPSTNCONF",
+            "Guid": "26d45bd9-adf1-46cd-a9e1-51e9a5524128",
+            "Shortname": "O365E5NA",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "ADALLOM_S_O365",
+                "BI_AZURE_P2",
+                "BPOS_S_TODO_3",
+                "Deskless",
+                "EQUIVIO_ANALYTICS",
+                "EXCHANGE_ANALYTICS",
+                "EXCHANGE_S_ENTERPRISE",
+                "FLOW_O365_P3",
+                "FORMS_PLAN_E5",
+                "LOCKBOX_ENTERPRISE",
+                "MCOEV",
+                "MCOSTANDARD",
+                "OFFICESUBSCRIPTION",
+                "POWERAPPS_O365_P3",
+                "PROJECTWORKMANAGEMENT",
+                "RMS_S_ENTERPRISE",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC",
+                "STREAM_O365_E5",
+                "SWAY",
+                "TEAMS1",
+                "THREAT_INTELLIGENCE",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 F1",
+            "Aliases": [],
+            "StringId": "DESKLESSPACK",
+            "Guid": "4b585984-651b-448a-9e53-3b10f069cf7f",
+            "Shortname": "O365F1",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "BPOS_S_TODO_FIRSTLINE",
+                "Deskless",
+                "EXCHANGE_S_DESKLESS",
+                "FLOW_O365_S1",
+                "FORMS_PLAN_K",
+                "MCOIMP",
+                "OFFICEMOBILE_SUBSCRIPTION",
+                "POWERAPPS_O365_S1",
+                "SHAREPOINTDESKLESS",
+                "SHAREPOINTWAC",
+                "STREAM_O365_K",
+                "SWAY",
+                "TEAMS1",
+                "YAMMER_ENTERPRISE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 MIDSIZE BUSINESS",
+            "Aliases": [],
+            "StringId": "MIDSIZEPACK",
+            "Guid": "04a7fb0d-32e0-4241-b4f5-3f7618cd1162",
+            "Shortname": "O365MB",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "EXCHANGE_S_STANDARD_MIDMARKET",
+                "MCOSTANDARD_MIDMARKET",
+                "OFFICESUBSCRIPTION",
+                "SHAREPOINTENTERPRISE_MIDMARKET",
+                "SHAREPOINTWAC",
+                "SWAY",
+                "YAMMER_MIDSIZE"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 PROPLUS",
+            "Aliases": [],
+            "StringId": "OFFICESUBSCRIPTION",
+            "Guid": "c2273bd0-dff7-4215-9ef5-2c7bcfb06425",
+            "Shortname": "O365PPLUS",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "FORMS_PLAN_E1",
+                "OFFICESUBSCRIPTION",
+                "ONEDRIVESTANDARD",
+                "SHAREPOINTWAC",
+                "SWAY"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 SMALL BUSINESS",
+            "Aliases": [],
+            "StringId": "LITEPACK",
+            "Guid": "bd09678e-b83c-4d3f-aaba-3dad4abd128b",
+            "Shortname": "O365SB",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "EXCHANGE_L_STANDARD",
+                "MCOLITE",
+                "SHAREPOINTLITE",
+                "SWAY"
+            ]
+        },
+        {
+            "Name": "OFFICE 365 SMALL BUSINESS PREMIUM",
+            "Aliases": [],
+            "StringId": "LITEPACK_P2",
+            "Guid": "fc14ec4a-4169-49a4-a51e-2c852931814b",
+            "Shortname": "O365SBP",
+            "Weight": 100,
+            "Type": "Primary",
+            "ServicePlans": [
+                "EXCHANGE_L_STANDARD",
+                "MCOLITE",
+                "OFFICE_PRO_PLUS_SUBSCRIPTION_SMBIZ",
+                "SHAREPOINTLITE",
+                "SWAY"
+            ]
+        },
+        {
+            "Name": "ONEDRIVE FOR BUSINESS (PLAN 1)",
+            "Aliases": [],
+            "StringId": "WACONEDRIVESTANDARD",
+            "Guid": "e6778190-713e-4e4f-9119-8b8238de25df",
+            "Shortname": "OD1",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "FORMS_PLAN_E1",
+                "ONEDRIVESTANDARD",
+                "SHAREPOINTWAC",
+                "SWAY"
+            ]
+        },
+        {
+            "Name": "ONEDRIVE FOR BUSINESS (PLAN 2)",
+            "Aliases": [],
+            "StringId": "WACONEDRIVEENTERPRISE",
+            "Guid": "ed01faf2-1d88-4947-ae91-45ca18703a96",
+            "Shortname": "OD2",
+            "Weight": 100,
+            "Type": "Supplementary",
+            "ServicePlans": [
+                "ONEDRIVEENTERPRISE",
+                "SHAREPOINTWAC"
+            ]
+        },
+        {
+            "Name": "POWER BI FOR OFFICE 365 ADD-ON",
+            "Aliases": [],
+            "StringId": "POWER_BI_ADDON",
+            "Guid": "45bc2c81-6072-436a-9b0b-3b12eefbc402",
+            "Shortname": "PBIO365",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "BI_AZURE_P1",
+                "SQL_IS_SSIM"
+            ]
+        },
+        {
+            "Name": "POWER BI PRO",
+            "Aliases": [],
+            "StringId": "POWER_BI_PRO",
+            "Guid": "f8a1db68-be16-40ed-86d5-cb42ce701560",
+            "Shortname": "PBIPRO",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "BI_AZURE_P2"
+            ]
+        },
+        {
+            "Name": "PROJECT FOR OFFICE 365",
+            "Aliases": [],
+            "StringId": "PROJECTCLIENT",
+            "Guid": "a10d5e58-74da-4312-95c8-76be4e5b75a0",
+            "Shortname": "PRJO365",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "PROJECT_CLIENT_SUBSCRIPTION"
+            ]
+        },
+        {
+            "Name": "PROJECT ONLINE ESSENTIALS",
+            "Aliases": [],
+            "StringId": "PROJECTESSENTIALS",
+            "Guid": "776df282-9fc0-4862-99e2-70e561b9909e",
+            "Shortname": "PRJOE",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "FORMS_PLAN_E1",
+                "PROJECT_ESSENTIALS",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC",
+                "SWAY"
+            ]
+        },
+        {
+            "Name": "PROJECT ONLINE PREMIUM",
+            "Aliases": [],
+            "StringId": "PROJECTPREMIUM",
+            "Guid": "09015f9f-377f-4538-bbb5-f75ceb09358a",
+            "Shortname": "PRJOP",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "PROJECT_CLIENT_SUBSCRIPTION",
+                "SHAREPOINT_PROJECT",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC"
+            ]
+        },
+        {
+            "Name": "PROJECT ONLINE PREMIUM WITHOUT PROJECT CLIENT",
+            "Aliases": [],
+            "StringId": "PROJECTONLINE_PLAN_1",
+            "Guid": "2db84718-652c-47a7-860c-f10d8abbdae3",
+            "Shortname": "PRJOP1",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "FORMS_PLAN_E1",
+                "SHAREPOINT_PROJECT",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC",
+                "SWAY"
+            ]
+        },
+        {
+            "Name": "PROJECT ONLINE PROFESSIONAL",
+            "Aliases": [],
+            "StringId": "PROJECTPROFESSIONAL",
+            "Guid": "53818b1b-4a27-454b-8896-0dba576410e6",
+            "Shortname": "PRJOPRO",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "PROJECT_CLIENT_SUBSCRIPTION",
+                "SHAREPOINT_PROJECT",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC"
+            ]
+        },
+        {
+            "Name": "PROJECT ONLINE WITH PROJECT FOR OFFICE 365",
+            "Aliases": [],
+            "StringId": "PROJECTONLINE_PLAN_2",
+            "Guid": "f82a60b8-1ee3-4cfb-a4fe-1c6a53c2656c",
+            "Shortname": "PRJOO365",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "FORMS_PLAN_E1",
+                "PROJECT_CLIENT_SUBSCRIPTION",
+                "SHAREPOINT_PROJECT",
+                "SHAREPOINTENTERPRISE",
+                "SHAREPOINTWAC",
+                "SWAY"
+            ]
+        },
+        {
+            "Name": "SHAREPOINT ONLINE (PLAN 1)",
+            "Aliases": [],
+            "StringId": "SHAREPOINTSTANDARD",
+            "Guid": "1fc08a02-8b3d-43b9-831e-f76859e04e1a",
+            "Shortname": "SPOP1",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "SHAREPOINTSTANDARD"
+            ]
+        },
+        {
+            "Name": "SHAREPOINT ONLINE (PLAN 2)",
+            "Aliases": [],
+            "StringId": "SHAREPOINTENTERPRISE",
+            "Guid": "a9732ec9-17d9-494c-a51c-d6b45b384dcb",
+            "Shortname": "SPOP2",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "SHAREPOINTENTERPRISE"
+            ]
+        },
+        {
+            "Name": "SKYPE FOR BUSINESS CLOUD PBX",
+            "Aliases": [],
+            "StringId": "MCOEV",
+            "Guid": "e43b5b99-8dfb-405f-9987-dc307f34bcbd",
+            "Shortname": "S4BPBX",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "MCOEV"
+            ]
+        },
+        {
+            "Name": "SKYPE FOR BUSINESS ONLINE (PLAN 1)",
+            "Aliases": [],
+            "StringId": "MCOIMP",
+            "Guid": "b8b749f8-a4ef-4887-9539-c95b1eaa5db7",
+            "Shortname": "S4BP1",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "MCOIMP"
+            ]
+        },
+        {
+            "Name": "SKYPE FOR BUSINESS ONLINE (PLAN 2)",
+            "Aliases": [],
+            "StringId": "MCOSTANDARD",
+            "Guid": "d42c793f-6c78-4f43-92ca-e8f6a02b035f",
+            "Shortname": "S4BP2",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "MCOSTANDARD"
+            ]
+        },
+        {
+            "Name": "SKYPE FOR BUSINESS PSTN DOMESTIC AND INTERNATIONAL CALLING",
+            "Aliases": [],
+            "StringId": "MCOPSTN2",
+            "Guid": "d3b4fe1f-9992-4930-8acb-ca6ec609365e",
+            "Shortname": "S4BC2",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "MCOPSTN2"
+            ]
+        },
+        {
+            "Name": "SKYPE FOR BUSINESS PSTN DOMESTIC CALLING",
+            "Aliases": [],
+            "StringId": "MCOPSTN1",
+            "Guid": "0dab259f-bf13-4952-b7f8-7db8f131b28d",
+            "Shortname": "S4BC1",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "MCOPSTN1"
+            ]
+        },
+        {
+            "Name": "SKYPE FOR BUSINESS PSTN DOMESTIC CALLING (120 Minutes)",
+            "Aliases": [],
+            "StringId": "MCOPSTN5",
+            "Guid": "54a152dc-90de-4996-93d2-bc47e670fc06",
+            "Shortname": "S4BC5",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "MCOPSTN5"
+            ]
+        },
+        {
+            "Name": "VISIO ONLINE PLAN 1",
+            "Aliases": [],
+            "StringId": "VISIOONLINE_PLAN1",
+            "Guid": "4b244418-9658-4451-a2b8-b5e2b364e9bd",
+            "Shortname": "VISOP1",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "ONEDRIVE_BASIC",
+                "VISIOONLINE"
+            ]
+        },
+        {
+            "Name": "VISIO Online Plan 2",
+            "Aliases": [],
+            "StringId": "VISIOCLIENT",
+            "Guid": "c5928f49-12ba-48f7-ada3-0d743a3601d5",
+            "Shortname": "VISOP2",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "ONEDRIVE_BASIC",
+                "VISIO_CLIENT_SUBSCRIPTION",
+                "VISIOONLINE"
+            ]
+        },
+        {
+            "Name": "WINDOWS 10 E3",
+            "Aliases": [],
+            "StringId": "WIN10_PRO_ENT_SUB",
+            "Guid": "cb10e6cd-9da4-4992-867b-67546b1db821",
+            "Shortname": "W10E3",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "WIN10_PRO_ENT_SUB"
+            ]
+        },
+        {
+            "Name": "Windows 10 E5",
+            "Aliases": [],
+            "StringId": "WIN10_VDA_E5",
+            "Guid": "488ba24a-39a9-4473-8ee5-19291e71b002",
+            "Shortname": "W10E5",
+            "Weight": 100,
+            "Type": "",
+            "ServicePlans": [
+                "EXCHANGE_S_FOUNDATION",
+                "WINDEFATP",
+                "Virtualization Rights for Windows 10 (E3/E5+VDA)"
+            ]
+        }
+    ]
+}

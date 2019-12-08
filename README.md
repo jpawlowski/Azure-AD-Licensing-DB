@@ -1,3 +1,21 @@
+**Table of contents**
+
+* [Introduction and motivation](#introduction-and-motivation)
+* [Used terms](#used-terms)
+    * [Product](#product)
+    * [Service](#service)
+    * [Service variant](#service-variant)
+    * [Service feature](#service-feature)
+    * [Package](#package)
+    * [Product license](#product-license)
+    * [Service plan](#service-plan)
+* [File structure](#file-structure)
+    * [1. Declarative layer](#1-declarative-layer)
+    * [2. Stock layer](#2-stock-layer)
+    * [3. Service layer](#3-service-layer)
+* [Credits](#credits)
+* [Contribute](#contribute)
+
 # Introduction and motivation
 
 This repository contains textual files describing Microsoft online licenses and their containing products and services.
@@ -23,7 +41,7 @@ A product is mostly what you can purchase from Microsoft.
 
 In case a product includes a combination of many different services, this is also called a _product package_ (see definition of a [package](#package) below).
 
-__Examples:__
+**Examples:**
 
 _Combination of services:_
 - Microsoft 365
@@ -44,7 +62,7 @@ The definition per se is independant from any feature sets or service variants. 
 
 The difference between a product and a service is that you can purchase the product, but never the service. That means that there could be more services defined but they are not available to be purchased individually.
 
-__Examples:__
+**Examples:**
 
 _Sold separately as a product or as part of a product package_:
 - Azure Active Directory
@@ -60,7 +78,7 @@ _Not sold separately:_
 
 A variant of a service refers to a particular set of features that is enabled for the user. It is considered a _non-technical term_. However, it is interchangeable with the technical term _service plan_ and its use mostly depends on the audience of people you are talking to.
 
-__Examples:__
+**Examples:**
 
 - Azure Active Directory Premium P1
 - Azure Active Directory Premium P2
@@ -75,7 +93,7 @@ A service feature refers to a particular functionality within a service. It is c
 
 A particular set of features may also be referred to as a _service variant_ (see definition above).
 
-__Examples:__
+**Examples:**
 
 Features of _Azure Active Directory Premium P2:_
 - Azure AD Privileged Identitiy Management
@@ -97,15 +115,15 @@ In _technical_ terms, a package is mixing different service plans into a single 
 
 A package can also be a synonym for a [product license](#product-license) (see below).
 
-__Examples:__
+**Examples:**
 
-- Microsoft 365 __E3__
-- Microsoft 365 __E5__
-- Office 365 __E1__
-- Office 365 __E3__
-- Office 365 __E5__
-- Enterprise Mobility + Security __E3__
-- Enterprise Mobility + Security __E5__
+- Microsoft 365 **E3**
+- Microsoft 365 **E5**
+- Office 365 **E1**
+- Office 365 **E3**
+- Office 365 **E5**
+- Enterprise Mobility + Security **E3**
+- Enterprise Mobility + Security **E5**
 
 ## Product license
 
@@ -117,22 +135,22 @@ Sometimes, a product license is often also referred to as a _product license pla
 
 Some documentation may also refer to this as a _product name_. _SKU_ (short for _Stock Keeping Unit_) might be another generic analogy here. Also, _USL_ (short for _User Subscription License_) might occasionally appear as a synonym.
 
-__Examples:__
+**Examples:**
 
-_Single product licenses:__
-- Visio Online __(Plan 1)__
-- Visio Online __(Plan 2)__
-- Project Online __Essentials__
-- Project Online __Professional__
+_Single product licenses:_
+- Visio Online **(Plan 1)**
+- Visio Online **(Plan 2)**
+- Project Online **Essentials**
+- Project Online **Professional**
 
-_Product package licenses:__
-- Microsoft 365 __E3__
-- Microsoft 365 __E5__
-- Office 365 __E1__
-- Office 365 __E3__
-- Office 365 __E5__
-- Enterprise Mobility + Security __E3__
-- Enterprise Mobility + Security __E5__
+_Product package licenses:_
+- Microsoft 365 **E3**
+- Microsoft 365 **E5**
+- Office 365 **E1**
+- Office 365 **E3**
+- Office 365 **E5**
+- Enterprise Mobility + Security **E3**
+- Enterprise Mobility + Security **E5**
 
 ## Service plan
 
@@ -142,7 +160,7 @@ This is the representation for a set of features that can be enabled/disabled fo
 
 In rare cases, disabling a service plan will be of no effect because included features can only be enabled on tenant level (also see [Microsoft 365 tenant-level services licensing guideance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-tenantlevel-services-licensing-guidance)). For those services, a service plan is only representing proper licensing for the user. The enablement status is irrelevant for the compliance status of a user as long as the containing product license is assigned to the user.
 
-__Examples:__
+**Examples:**
 
 Service plans of _Azure Active Directory Premium P1:_
 - Azure Active Directory Premium P1
@@ -243,7 +261,7 @@ Besides those persons pointed out here, there may be other contributors which ca
 
 # Contribute
 
-__This set of files is in the early stages and should be considered _under construction_ until further notice.__
+**This set of files is in the early stages and should be considered _under construction_ until further notice.**
 
 ## Issues
 

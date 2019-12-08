@@ -1,0 +1,26 @@
+{
+    "meta": {
+        "SchemaVersion": 1,
+        "StringId": "ServiceFeaturesDb"
+    },
+    "items": [
+        {
+            "StringId": "AADIP",
+            "Name": "Azure AD Identity Protection",
+            "Description": "",
+            "Aliases": [],
+            "ServicePlans": [
+                "AAD_PREMIUM_P2"
+            ]
+        },
+        {
+            "StringId": "AADPIM",
+            "Name": "Azure AD Privileged Identity Management",
+            "Description": "",
+            "Aliases": [],
+            "ServicePlans": [
+                "AAD_PREMIUM_P2"
+            ]
+        }
+    ]
+}

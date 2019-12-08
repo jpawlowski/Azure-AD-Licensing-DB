@@ -62,8 +62,8 @@ A variant of a service refers to a particular set of features that is enabled fo
 
 __Examples:__
 
-- Azure Active Directory Premium (Plan 1)
-- Azure Active Directory Premium (Plan 2)
+- Azure Active Directory Premium P1
+- Azure Active Directory Premium P2
 - Exchange Online (Plan 1)
 - Exchange Online (Plan 2)
 - SharePoint Online (Plan 1)
@@ -77,12 +77,13 @@ A particular set of features may also be referred to as a _service variant_ (see
 
 __Examples:__
 
-Features of _Azure Active Directory Premium (Plan 2):_
+Features of _Azure Active Directory Premium P2:_
 - Azure AD Privileged Identitiy Management
 - Azure AD Identity Protection
 
 Features of _Exchange Online (Plan 2):_
-- Azure Privileged Identitiy Management
+- Mailbox size: 100 GB
+- Data-loss prevention
 
 ## Package
 
@@ -91,6 +92,20 @@ A package is a technical _and_ also a non-technical term at the same time.
 This will allow to have different views from different angles onto the same unit, mostly depending of the audience of people talking about it.
 
 In _non-technical_ terms, a package is meant to be seen as a combination of different products that can be purchased as a bundle in order to receive some financial discounts (also see definition of a [product](#product) above).
+
+In _technical_ terms, a package is mixing different service plans into a single product license that can be assigned to a user. From a technical perspective, this is no different from assigning many product licenses containing single services (ignoring some less important services that are not available for individual purchase).
+
+A package can also be a synonym for a [product license](#product-license) (see below).
+
+__Examples:__
+
+- Microsoft 365 __E3__
+- Microsoft 365 __E5__
+- Office 365 __E1__
+- Office 365 __E3__
+- Office 365 __E5__
+- Enterprise Mobility + Security __E3__
+- Enterprise Mobility + Security __E5__
 
 ## Product license
 
@@ -102,6 +117,23 @@ Sometimes, a product license is often also referred to as a _product license pla
 
 Some documentation may also refer to this as a _product name_. _SKU_ (short for _Stock Keeping Unit_) might be another generic analogy here. Also, _USL_ (short for _User Subscription License_) might occasionally appear as a synonym.
 
+__Examples:__
+
+_Single product licenses:__
+- Visio Online __(Plan 1)__
+- Visio Online __(Plan 2)__
+- Project Online __Essentials__
+- Project Online __Professional__
+
+_Product package licenses:__
+- Microsoft 365 __E3__
+- Microsoft 365 __E5__
+- Office 365 __E1__
+- Office 365 __E3__
+- Office 365 __E5__
+- Enterprise Mobility + Security __E3__
+- Enterprise Mobility + Security __E5__
+
 ## Service plan
 
 A service plan is the technical equivalent of a _service variant_ (see [above](#service-variant)).
@@ -109,6 +141,19 @@ A service plan is the technical equivalent of a _service variant_ (see [above](#
 This is the representation for a set of features that can be enabled/disabled for a user or group within a product license. For most services, this will allow some kind of access control to certain features on licensing level which sometimes may be in addition to access control on service level (e.g. when a service allows to restrict access to certain users or security groups).
 
 In rare cases, disabling a service plan will be of no effect because included features can only be enabled on tenant level (also see [Microsoft 365 tenant-level services licensing guideance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-tenantlevel-services-licensing-guidance)). For those services, a service plan is only representing proper licensing for the user. The enablement status is irrelevant for the compliance status of a user as long as the containing product license is assigned to the user.
+
+__Examples:__
+
+Service plans of _Azure Active Directory Premium P1:_
+- Azure Active Directory Premium P1
+- Cloud App Security Discovery
+- Microsoft Azure Multi-Factor Authentication
+
+Service plans of _Azure Active Directory Premium P2:_
+- Azure Active Directory Premium P1
+- Azure Active Directory Premium P2
+- Cloud App Security Discovery
+- Microsoft Azure Multi-Factor Authentication
 
 # File structure
 
@@ -133,7 +178,7 @@ Some attribute values are supposed to be static and cannot be changed per defini
     - `Guid`
     - `StringId`
 2. Self-declared static definitions
-    - `Shortname` (changing will result in changed behaviour when used in your licensing automations)
+    - `Shortname` (as change might result in changed behaviour when used in licensing automations, e.g. within group names)
 
 ## 1. Declarative layer
 

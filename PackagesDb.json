@@ -1,0 +1,74 @@
+{
+    "meta": {
+        "SchemaVersion": 1,
+        "StringId": "PackagesDb",
+        "Description": "Defines overall Microsoft service/product bundle SKUs to handle licensing conflicts."
+    },
+    "items": [
+        {
+            "Name": "Office 365",
+            "Aliases": [],
+            "StringId": "O365",
+            "Cost": 100,
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": [
+                "LITEPACK",
+                "LITEPACK_P2",
+                "MIDSIZEPACK",
+                "DESKLESSPACK",
+                "SMB_BUSINESS",
+                "O365_BUSINESS",
+                "SMB_BUSINESS_ESSENTIALS",
+                "O365_BUSINESS_ESSENTIALS",
+                "SMB_BUSINESS_PREMIUM",
+                "O365_BUSINESS_PREMIUM",
+                "STANDARDPACK",
+                "STANDARDWOFFPACK",
+                "DEVELOPERPACK",
+                "ENTERPRISEPACK",
+                "ENTERPRISEWITHSCAL",
+                "ENTERPRISEPREMIUM_NOPSTNCONF",
+                "ENTERPRISEPREMIUM"
+            ],
+            "Conflicts": [
+                "M365"
+            ]
+        },
+        {
+            "Name": "Enterprise Mobility + Security",
+            "Aliases": [],
+            "StringId": "EMS",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "Cost": 200,
+            "ProductLicensesCombinations": [
+                "EMS",
+                "EMSPREMIUM"
+            ],
+            "Conflicts": [
+                "M365"
+            ]
+        },
+        {
+            "Name": "Microsoft 365",
+            "Aliases": [],
+            "StringId": "M365",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "Cost": 300,
+            "ProductLicensesCombinations": [
+                "SPB",
+                "SPE_F1",
+                "SPE_E3",
+                "SPE_E3_USGOV_DOD",
+                "SPE_E3_USGOV_GCCHIGH",
+                "SPE_E5"
+            ],
+            "Conflicts": [
+                "O365",
+                "EMS"
+            ]
+        }
+    ]
+}

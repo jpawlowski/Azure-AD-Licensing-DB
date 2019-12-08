@@ -1,32 +1,96 @@
 {
     "meta": {
-        "ConfigSchemaVersion": 1,
+        "SchemaVersion": 1,
         "StringId": "ServicePlansDb",
-        "referenceUrl": "https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/licensing-service-plan-reference"
+        "referenceUrl": "https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/licensing-service-plan-reference",
+        "credits": [
+            "https://gist.github.com/matt2005/441ee8a91f77e66711e3d29cfd0b4fcb"
+        ]
     },
     "items": [
         {
-            "Guid": "03acaee3-9492-4f40-aed4-bcb6b32981b6",
-            "StringId": "NBENTERPRISE",
-            "Name": "MICROSOFT SOCIAL ENGAGEMENT - SERVICE DISCONTINUATION",
+            "Guid": "c4da7f8a-5ee2-4c99-a7e1-87d2df57f6fe",
+            "StringId": "AAD_BASIC",
+            "Name": "Azure Active Directory Basic",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
+            "Features": [],
+            "BelongsToProduct": "AAD",
             "ProductLicenses": [
-                "DYN365_ENTERPRISE_PLAN1",
-                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
-                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
-                "DYN365_ENTERPRISE_SALES"
+                "AAD_BASIC"
             ],
             "RequiredServicePlans": []
         },
         {
-            "Guid": "07699545-9485-468e-95b6-2fca3738be01",
-            "StringId": "FLOW_O365_P3",
-            "Name": "FLOW FOR OFFICE 365",
+            "Guid": "de377cbc-0019-4ec2-b77c-3f223947e102",
+            "StringId": "AAD_SMB",
+            "Name": "Azure Active Directory Small Business",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "FLOW",
+            "Features": [],
+            "BelongsToProduct": "AAD",
+            "ProductLicenses": [
+                "SPB"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "41781fb2-bc02-4b7c-bd55-b576c07bb09d",
+            "StringId": "AAD_PREMIUM",
+            "Name": "Azure Active Directory Premium (Plan 1)",
+            "Aliases": [],
+            "Features": [],
+            "BelongsToProduct": "AAD",
+            "ProductLicenses": [
+                "AAD_PREMIUM",
+                "AAD_PREMIUM_P2",
+                "EMS",
+                "EMSPREMIUM",
+                "SPE_E3",
+                "SPE_E5",
+                "SPE_E3_USGOV_DOD",
+                "SPE_E3_USGOV_GCCHIGH",
+                "SPE_F1"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "eec0eb4f-6444-4f95-aba0-50c24d67f998",
+            "StringId": "AAD_PREMIUM_P2",
+            "Name": "Azure Active Directory Premium (Plan 2)",
+            "Aliases": [],
+            "Features": [
+                "Azure AD Identity Protection",
+                "Azure AD Privileged Identity Management"
+            ],
+            "BelongsToProduct": "AAD",
+            "ProductLicenses": [
+                "AAD_PREMIUM_P2",
+                "EMSPREMIUM",
+                "SPE_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "932ad362-64a8-4783-9106-97849a1a30b9",
+            "StringId": "ADALLOM_S_DISCOVERY",
+            "Name": "Cloud App Security Discovery",
+            "Aliases": [],
+            "BelongsToProduct": "CAS",
+            "ProductLicenses": [
+                "AAD_PREMIUM",
+                "AAD_PREMIUM_P2",
+                "EMS",
+                "SPE_E3",
+                "SPE_E3_USGOV_GCCHIGH",
+                "SPE_F1"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "8c098270-9dd4-4350-9b30-ba4703f3b36b",
+            "StringId": "ADALLOM_S_O365",
+            "Name": "Office 365 Cloud App Security",
+            "Aliases": [],
+            "BelongsToProduct": "CAS",
             "ProductLicenses": [
                 "SPE_E5",
                 "ENTERPRISEPREMIUM",
@@ -35,44 +99,605 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "0898bdbb-73b0-471a-81e5-20f1fe4dd66e",
-            "StringId": "KAIZALA_STANDALONE",
-            "Name": "Microsoft Kaizala",
+            "Guid": "2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2",
+            "StringId": "ADALLOM_S_STANDALONE",
+            "Name": "Cloud App Security",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "KAIZALA",
+            "BelongsToProduct": "CAS",
+            "ProductLicenses": [
+                "EMSPREMIUM",
+                "SPE_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "14ab5db5-e6c4-4b20-b4bc-13e36fd2227f",
+            "StringId": "ATA",
+            "Name": "Azure Advanced Threat Protection",
+            "Aliases": [
+                "Advanced Threat Analytics"
+            ],
+            "BelongsToProduct": "ATP",
+            "ProductLicenses": [
+                "EMSPREMIUM",
+                "SPE_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "f20fedf3-f3c3-43c3-8267-2bfdd51c0939",
+            "StringId": "ATP_ENTERPRISE",
+            "Name": "Office 365 Advanced Threat Protection (Plan 1)",
+            "Aliases": [
+                "Exchange Online Advanced Threat Protection"
+            ],
+            "BelongsToProduct": "OATP",
             "ProductLicenses": [
                 "SPE_E5"
             ],
             "RequiredServicePlans": []
         },
         {
-            "Guid": "094e7854-93fc-4d55-b2c0-3ab5369ebdc1",
-            "StringId": "OFFICE_BUSINESS",
-            "Name": "OFFICE 365 BUSINESS",
+            "Guid": "2049e525-b859-401b-b2a0-e0a31c4b1fe4",
+            "StringId": "BI_AZURE_P0",
+            "Name": "Power BI (free)",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": null,
-            "BelongsToPackageRef": "O365",
+            "BelongsToProduct": "POWERBI",
             "ProductLicenses": [
-                "SPB",
-                "O365_BUSINESS",
-                "SMB_BUSINESS",
-                "O365_BUSINESS_PREMIUM",
-                "SMB_BUSINESS_PREMIUM"
+                "POWER_BI_STANDARD"
             ],
             "RequiredServicePlans": []
         },
         {
-            "Guid": "0b03f40b-c404-40c3-8651-2aceb74365fa",
-            "StringId": "POWERAPPS_DYN_P2",
-            "Name": "POWERAPPS FOR DYNAMICS 365",
+            "Guid": "2125cfd7-2110-4567-83c4-c1cd5275163d",
+            "StringId": "BI_AZURE_P1",
+            "Name": "Power BI Reporting and Analytics (Plan 1)",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "POWERAPPS",
+            "BelongsToProduct": "POWERBI",
+            "ProductLicenses": [
+                "POWER_BI_ADDON"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "70d33638-9c74-4d01-bfd3-562de28bd4ba",
+            "StringId": "BI_AZURE_P2",
+            "Name": "Power BI Pro (Plan 2)",
+            "Aliases": [],
+            "BelongsToProduct": "POWERBI",
+            "ProductLicenses": [
+                "SPE_E5",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF",
+                "POWER_BI_PRO"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "5e62787c-c316-451f-b873-1d05acd4d12c",
+            "StringId": "BPOS_S_TODO_1",
+            "Name": "Microsoft To-Do",
+            "Aliases": [],
+            "BelongsToProduct": "TODO",
+            "ProductLicenses": [
+                "SPB",
+                "O365_BUSINESS_ESSENTIALS",
+                "SMB_BUSINESS_ESSENTIALS",
+                "O365_BUSINESS_PREMIUM",
+                "SMB_BUSINESS_PREMIUM",
+                "STANDARDPACK",
+                "STANDARDWOFFPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "c87f142c-d1e9-4363-8630-aaea9c4d9ae5",
+            "StringId": "BPOS_S_TODO_2",
+            "Name": "Microsoft To-Do (Plan 2)",
+            "Aliases": [],
+            "BelongsToProduct": "TODO",
+            "ProductLicenses": [
+                "SPE_E3",
+                "ENTERPRISEPACK",
+                "ENTERPRISEWITHSCAL"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "3fb82609-8c27-4f7b-bd51-30634711ee67",
+            "StringId": "BPOS_S_TODO_3",
+            "Name": "To-Do (Plan 3)",
+            "Aliases": [],
+            "BelongsToProduct": "TODO",
+            "ProductLicenses": [
+                "SPE_E5",
+                "DEVELOPERPACK",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "80873e7a-cd2a-4e67-b061-1b5381a676a5",
+            "StringId": "BPOS_S_TODO_FIRSTLINE",
+            "Name": "To-Do (Firstline)",
+            "Aliases": [],
+            "BelongsToProduct": "TODO",
+            "ProductLicenses": [
+                "SPE_F1",
+                "DESKLESSPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "119cf168-b6cf-41fb-b82e-7fee7bae5814",
+            "StringId": "CRMPLAN1",
+            "Name": "MICROSOFT DYNAMICS CRM ONLINE BASIC (HIDDEN)",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "bf36ca64-95c6-4918-9275-eb9f4ce2c04f",
+            "StringId": "CRMPLAN2",
+            "Name": "MICROSOFT DYNAMICS CRM ONLINE BASIC",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "CRMPLAN2"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "f9646fb2-e3b2-4309-95de-dc4833737456",
+            "StringId": "CRMSTANDARD",
+            "Name": "MICROSOFT DYNAMICS CRM ONLINE PROFESSIONAL",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "CRMSTANDARD"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "d1142cfd-872e-4e77-b6ff-d98ec5a51f66",
+            "StringId": "DDYN365_CDS_DYN_P2",
+            "Name": "COMMON DATA SERVICE",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "Dynamics_365_for_Operations"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "99340b49-fb81-4b1e-976b-8f2ae8e9394f",
+            "StringId": "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
+            "Name": "DYNAMICS 365 FOR CUSTOMER SERVICE",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_CUSTOMER_SERVICE"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "d56f3deb-50d8-465a-bedb-f079817ccac1",
+            "StringId": "DYN365_ENTERPRISE_P1",
+            "Name": "DYNAMICS 365 CUSTOMER ENGAGEMENT PLAN",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
             "ProductLicenses": [
                 "DYN365_ENTERPRISE_PLAN1",
+                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "056a5f80-b4e0-4983-a8be-7ad254a113c9",
+            "StringId": "DYN365_ENTERPRISE_P1_IW",
+            "Name": "DYNAMICS 365 CUSTOMER ENGAGEMENT PLAN (HIDDEN)",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "2da8e897-7791-486b-b08f-cc63c8129df7",
+            "StringId": "DYN365_ENTERPRISE_SALES",
+            "Name": "DYNAMICS 365 FOR SALES",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_SALES"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "6a54b05e-4fab-40e7-9828-428db3b336fa",
+            "StringId": "DYN365_ENTERPRISE_TEAM_MEMBERS",
+            "Name": "DYNAMICS 365 FOR TEAM MEMBERS",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_TEAM_MEMBERS"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "643d201a-9884-45be-962a-06ba97062e5e",
+            "StringId": "DYN365_Enterprise_Talent_Attract_TeamMember",
+            "Name": "DYNAMICS 365 FOR TALENT - ATTRACT EXPERIENCE TEAM MEMBER",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_TEAM_MEMBERS"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "f2f49eef-4b3f-4853-809a-a055c6103fe0",
+            "StringId": "DYN365_Enterprise_Talent_Onboard_TeamMember",
+            "Name": "DYNAMICS 365 FOR TALENT - ONBOARD EXPERIENCE",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_TEAM_MEMBERS"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "920656a2-7dd8-4c83-97b6-a356414dbd36",
+            "StringId": "DYN365_FINANCIALS_BUSINESS",
+            "Name": "DYNAMICS 365 FOR FINANCIALS",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "DYN365_FINANCIALS_BUSINESS_SKU"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "65a1ebf4-6732-4f00-9dcb-3d115ffdeecd",
+            "StringId": "DYN365_TALENT_ENTERPRISE",
+            "Name": "DYNAMICS 365 FOR TALENT",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
                 "Dynamics_365_for_Operations"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "95d2cd7b-1007-484b-8595-5e97e63fe189",
+            "StringId": "DYNAMICS_365_FOR_OPERATIONS",
+            "Name": "Dynamics 365 for Operations",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "Dynamics_365_for_Operations"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "f5aa7b45-8a36-4cd1-bc37-5d06dea98645",
+            "StringId": "DYNAMICS_365_FOR_OPERATIONS_TEAM_MEMBERS",
+            "Name": "Dynamics_365_for_Operations_Team_members",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_TEAM_MEMBERS"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "8c7d2df8-86f0-4902-b2ed-a0458298f3b3",
+            "StringId": "Deskless",
+            "Name": "MICROSOFT STAFFHUB",
+            "Aliases": [],
+            "BelongsToProduct": "SHUB",
+            "ProductLicenses": [
+                "SPB",
+                "SPE_E3",
+                "SPE_E5",
+                "SPE_F1",
+                "O365_BUSINESS_PREMIUM",
+                "SMB_BUSINESS_PREMIUM",
+                "STANDARDPACK",
+                "STANDARDWOFFPACK",
+                "ENTERPRISEPACK",
+                "ENTERPRISEWITHSCAL",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF",
+                "DESKLESSPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "f815ac79-c5dd-4bcc-9b78-d97f7b817d0d",
+            "StringId": "Dynamics_365_Hiring_Free_PLAN",
+            "Name": "Dynamics 365 Hiring Free PLAN",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "Dynamics_365_for_Operations"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "300b8114-8555-4313-b861-0c115d820f50",
+            "StringId": "Dynamics_365_Onboarding_Free_PLAN",
+            "Name": "DYNAMICS 365 FOR TALENT: ONBOARD",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "Dynamics_365_for_Operations"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "a9e39199-8369-444b-89c1-5fe65ec45665",
+            "StringId": "Dynamics_365_for_Retail",
+            "Name": "DYNAMICS 365 FOR RETAIL",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "Dynamics_365_for_Operations"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "c0454a3d-32b5-4740-b090-78c32f48f0ad",
+            "StringId": "Dynamics_365_for_Retail_Team_members",
+            "Name": "DYNAMICS 365 FOR RETAIL TEAM MEMBERS",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_TEAM_MEMBERS"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "d5156635-0704-4f66-8803-93258f8b2678",
+            "StringId": "Dynamics_365_for_Talent_Team_members",
+            "Name": "DYNAMICS 365 FOR TALENT TEAM MEMBERS",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_TEAM_MEMBERS"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "ba5f0cfa-d54a-4ea0-8cf4-a7e1dc4423d8",
+            "StringId": "EMPLOYEE_SELF_SERVICE",
+            "Name": "Dynamics 365 Employee Self-Service (HIDDEN)",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "4de31727-a228-4ec3-a5bf-8e45b5ca48cc",
+            "StringId": "EQUIVIO_ANALYTICS",
+            "Name": "OFFICE 365 ADVANCED EDISCOVERY",
+            "Aliases": [],
+            "BelongsToProduct": "EDISCOVERY",
+            "ProductLicenses": [
+                "SPE_E5",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "34c0d7a0-a70f-4668-9238-47f9fc208882",
+            "StringId": "EXCHANGE_ANALYTICS",
+            "Name": "Microsoft MyAnalytics (Full)",
+            "Aliases": [],
+            "BelongsToProduct": "ANALYTICS",
+            "ProductLicenses": [
+                "SPE_E5",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "90927877-dcff-4af6-b346-2332c0b15bb7",
+            "StringId": "EXCHANGE_B_STANDARD",
+            "Name": "EXCHANGE ONLINE POP",
+            "Aliases": [],
+            "BelongsToProduct": "EXO",
+            "ProductLicenses": [
+                "EXCHANGETELCO"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "d42bdbd6-c335-4231-ab3d-c8f348d5aff5",
+            "StringId": "EXCHANGE_L_STANDARD",
+            "Name": "EXCHANGE ONLINE (PLAN 1)",
+            "Aliases": [],
+            "BelongsToProduct": "EXO",
+            "ProductLicenses": [
+                "LITEPACK",
+                "LITEPACK_P2"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "da040e0a-b393-4bea-bb76-928b3fa1cf5a",
+            "StringId": "EXCHANGE_S_ARCHIVE",
+            "Name": "EXCHANGE ONLINE ARCHIVING FOR EXCHANGE SERVER",
+            "Aliases": [],
+            "BelongsToProduct": "EXO",
+            "ProductLicenses": [
+                "EXCHANGEARCHIVE"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "176a09a6-7ec5-4039-ac02-b2791c6ba793",
+            "StringId": "EXCHANGE_S_ARCHIVE_ADDON",
+            "Name": "EXCHANGE ONLINE ARCHIVING FOR EXCHANGE ONLINE",
+            "Aliases": [],
+            "BelongsToProduct": "EXO",
+            "ProductLicenses": [
+                "EXCHANGEARCHIVE_ADDON",
+                "SPB"
+            ],
+            "RequiredServicePlans": [
+                [
+                    "EXCHANGE_B_STANDARD"
+                ],
+                [
+                    "EXCHANGE_L_STANDARD"
+                ],
+                [
+                    "EXCHANGE_S_ARCHIVE"
+                ],
+                [
+                    "EXCHANGE_S_DESKLESS"
+                ],
+                [
+                    "EXCHANGE_S_ENTERPRISE"
+                ],
+                [
+                    "EXCHANGE_S_ESSENTIALS"
+                ],
+                [
+                    "EXCHANGE_S_STANDARD"
+                ],
+                [
+                    "EXCHANGE_S_STANDARD_MIDMARKET"
+                ]
+            ]
+        },
+        {
+            "Guid": "4a82b400-a79f-41a4-b4e2-e94f5787b113",
+            "StringId": "EXCHANGE_S_DESKLESS",
+            "Name": "EXCHANGE ONLINE KIOSK",
+            "Aliases": [],
+            "BelongsToProduct": "EXO",
+            "ProductLicenses": [
+                "EXCHANGEDESKLESS",
+                "SPE_F1",
+                "DESKLESSPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "efb87545-963c-4e0d-99df-69c6916d9eb0",
+            "StringId": "EXCHANGE_S_ENTERPRISE",
+            "Name": "EXCHANGE ONLINE (PLAN 2)",
+            "Aliases": [],
+            "BelongsToProduct": "EXO",
+            "ProductLicenses": [
+                "EXCHANGEENTERPRISE",
+                "SPE_E3",
+                "SPE_E5",
+                "SPE_E3_USGOV_DOD",
+                "SPE_E3_USGOV_GCCHIGH",
+                "ENTERPRISEPACK",
+                "DEVELOPERPACK",
+                "ENTERPRISEPACK_USGOV_DOD",
+                "ENTERPRISEPACK_USGOV_GCCHIGH",
+                "ENTERPRISEWITHSCAL",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "1126bef5-da20-4f07-b45e-ad25d2581aa8",
+            "StringId": "EXCHANGE_S_ESSENTIALS",
+            "Name": "EXCHANGE ONLINE ESSENTIALS",
+            "Aliases": [],
+            "BelongsToProduct": "EXO",
+            "ProductLicenses": [
+                "EXCHANGE_S_ESSENTIALS"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "113feb6c-3fe4-4440-bddc-54d774bf0318",
+            "StringId": "EXCHANGE_S_FOUNDATION",
+            "Name": "EXCHANGE ONLINE FOUNDATION",
+            "Aliases": [],
+            "BelongsToProduct": "EXO",
+            "ProductLicenses": [
+                "WIN10_VDA_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "9aaf7827-d63c-4b61-89c3-182f06f82e5c",
+            "StringId": "EXCHANGE_S_STANDARD",
+            "Name": "EXCHANGE ONLINE (PLAN 1)",
+            "Aliases": [],
+            "BelongsToProduct": "EXO",
+            "ProductLicenses": [
+                "EXCHANGESTANDARD",
+                "EXCHANGEESSENTIALS",
+                "SPB",
+                "O365_BUSINESS_ESSENTIALS",
+                "SMB_BUSINESS_ESSENTIALS",
+                "O365_BUSINESS_PREMIUM",
+                "SMB_BUSINESS_PREMIUM",
+                "STANDARDPACK",
+                "STANDARDWOFFPACK",
+                "MIDSIZEPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "fc52cc4b-ed7d-472d-bbe7-b081c23ecc56",
+            "StringId": "EXCHANGE_S_STANDARD_MIDMARKET",
+            "Name": "EXCHANGE ONLINE PLAN 1",
+            "Aliases": [],
+            "BelongsToProduct": "EXO",
+            "ProductLicenses": [
+                "MIDSIZEPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "7e6d7d78-73de-46ba-83b1-6d25117334ba",
+            "StringId": "FLOW_DYN_APPS",
+            "Name": "FLOW FOR DYNAMICS 365",
+            "Aliases": [],
+            "BelongsToProduct": "FLOW",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
+                "DYN365_FINANCIALS_BUSINESS_SKU",
+                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
+                "DYN365_ENTERPRISE_SALES",
+                "CRMPLAN2",
+                "CRMSTANDARD"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "b650d915-9886-424b-a08d-633cede56f57",
+            "StringId": "FLOW_DYN_P2",
+            "Name": "FLOW FOR DYNAMICS 365",
+            "Aliases": [],
+            "BelongsToProduct": "FLOW",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_PLAN1"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "1ec58c70-f69c-486a-8109-4b87ce86e449",
+            "StringId": "FLOW_DYN_TEAM",
+            "Name": "FLOW FOR DYNAMICS 365",
+            "Aliases": [],
+            "BelongsToProduct": "FLOW",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_TEAM_MEMBERS"
             ],
             "RequiredServicePlans": []
         },
@@ -81,7 +706,6 @@
             "StringId": "FLOW_O365_P1",
             "Name": "FLOW FOR OFFICE 365",
             "Aliases": [],
-            "Weight": 100,
             "BelongsToProduct": "FLOW",
             "ProductLicenses": [
                 "SPB",
@@ -95,12 +719,315 @@
             "RequiredServicePlans": []
         },
         {
+            "Guid": "76846ad7-7776-4c40-a281-a386362dd1b9",
+            "StringId": "FLOW_O365_P2",
+            "Name": "FLOW FOR OFFICE 365",
+            "Aliases": [],
+            "BelongsToProduct": "FLOW",
+            "ProductLicenses": [
+                "SPE_E3",
+                "ENTERPRISEPACK",
+                "DEVELOPERPACK",
+                "ENTERPRISEWITHSCAL"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "07699545-9485-468e-95b6-2fca3738be01",
+            "StringId": "FLOW_O365_P3",
+            "Name": "FLOW FOR OFFICE 365",
+            "Aliases": [],
+            "BelongsToProduct": "FLOW",
+            "ProductLicenses": [
+                "SPE_E5",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "bd91b1a4-9f94-4ecf-b45b-3a65e5c8128a",
+            "StringId": "FLOW_O365_S1",
+            "Name": "FLOW FOR OFFICE 365 K1",
+            "Aliases": [],
+            "BelongsToProduct": "FLOW",
+            "ProductLicenses": [
+                "SPE_F1",
+                "DESKLESSPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "159f4cd6-e380-449f-a816-af1a9ef76344",
+            "StringId": "FORMS_PLAN_E1",
+            "Name": "MICROSOFT FORMS (PLAN E1)",
+            "Aliases": [],
+            "BelongsToProduct": "FORMS",
+            "ProductLicenses": [
+                "SPB",
+                "O365_BUSINESS",
+                "SMB_BUSINESS",
+                "O365_BUSINESS_ESSENTIALS",
+                "SMB_BUSINESS_ESSENTIALS",
+                "O365_BUSINESS_PREMIUM",
+                "SMB_BUSINESS_PREMIUM",
+                "STANDARDPACK",
+                "STANDARDWOFFPACK",
+                "OFFICESUBSCRIPTION",
+                "WACONEDRIVESTANDARD",
+                "PROJECTESSENTIALS",
+                "PROJECTONLINE_PLAN_1",
+                "PROJECTONLINE_PLAN_2"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "2789c901-c14e-48ab-a76a-be334d9d793a",
+            "StringId": "FORMS_PLAN_E3",
+            "Name": "MICROSOFT FORMS (PLAN E3)",
+            "Aliases": [],
+            "BelongsToProduct": "FORMS",
+            "ProductLicenses": [
+                "SPE_E3",
+                "ENTERPRISEPACK",
+                "ENTERPRISEWITHSCAL"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "e212cbc7-0961-4c40-9825-01117710dcb1",
+            "StringId": "FORMS_PLAN_E5",
+            "Name": "MICROSOFT FORMS (PLAN E5)",
+            "Aliases": [],
+            "BelongsToProduct": "FORMS",
+            "ProductLicenses": [
+                "SPE_E5",
+                "DEVELOPERPACK",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "f07046bd-2a3c-4b96-b0be-dea79d7cbfb8",
+            "StringId": "FORMS_PLAN_K",
+            "Name": "MICROSOFT FORMS (PLAN K)",
+            "Aliases": [],
+            "BelongsToProduct": "FORMS",
+            "ProductLicenses": [
+                "SPE_F1",
+                "DESKLESSPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "c4801e8a-cb58-4c35-aca6-f2dcc106f287",
+            "StringId": "INFORMATION_BARRIERS",
+            "Name": "Information Barriers",
+            "Aliases": [],
+            "BelongsToProduct": "INFORMATION_BARRIERS",
+            "ProductLicenses": [
+                "SPE_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "c1ec4a95-1f05-45b3-a911-aa3fa01094f5",
+            "StringId": "INTUNE_A",
+            "Name": "MICROSOFT INTUNE",
+            "Aliases": [],
+            "BelongsToProduct": "INT",
+            "ProductLicenses": [
+                "EMS",
+                "EMSPREMIUM",
+                "INTUNE_A",
+                "SPE_E3",
+                "SPE_E5",
+                "SPE_E3_USGOV_DOD",
+                "SPE_E3_USGOV_GCCHIGH",
+                "SPE_F1"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "3e170737-c728-4eae-bbb9-3f3360f7184c",
+            "StringId": "INTUNE_A_VL",
+            "Name": "MICROSOFT INTUNE (HIDDEN)",
+            "Aliases": [],
+            "BelongsToProduct": "INT",
+            "ProductLicenses": [],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "2dc63b8a-df3d-448f-b683-8655877c9360",
+            "StringId": "INTUNE_B",
+            "Name": "MICROSOFT INTUNE B (HIDDEN)",
+            "Aliases": [],
+            "BelongsToProduct": "INT",
+            "ProductLicenses": [],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "882e1d05-acd1-4ccb-8708-6ee03664b117",
+            "StringId": "INTUNE_O365",
+            "Name": "Mobile Device Management for Office 365",
+            "Aliases": [],
+            "BelongsToProduct": "INT",
+            "ProductLicenses": [
+                "SPE_E5",
+                "SPE_F1"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "8e9ff0ff-aa7a-4b20-83c1-2f636b600ac2",
+            "StringId": "INTUNE_SMBIZ",
+            "Name": "INTUNE_SMBIZ",
+            "Aliases": [],
+            "BelongsToProduct": "INT",
+            "ProductLicenses": [
+                "SPB"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "d736def0-1fde-43f0-a5be-e3f8b2de6e41",
+            "StringId": "IT_ACADEMY_AD",
+            "Name": "MS IMAGINE ACADEMY",
+            "Aliases": [],
+            "BelongsToProduct": "IACADEMY",
+            "ProductLicenses": [
+                "IT_ACADEMY_AD"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "73b2a583-6a59-42e3-8e83-54db46bc3278",
+            "StringId": "KAIZALA_O365_P1",
+            "Name": "MICROSOFT KAIZALA PRO (PLAN 1)",
+            "Aliases": [],
+            "BelongsToProduct": "KAIZALA",
+            "ProductLicenses": [
+                "SPE_F1"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "0898bdbb-73b0-471a-81e5-20f1fe4dd66e",
+            "StringId": "KAIZALA_STANDALONE",
+            "Name": "Microsoft Kaizala",
+            "Aliases": [],
+            "BelongsToProduct": "KAIZALA",
+            "ProductLicenses": [
+                "SPE_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "9f431833-0334-42de-a7dc-70aa40db46db",
+            "StringId": "LOCKBOX_ENTERPRISE",
+            "Name": "Customer Lockbox",
+            "Aliases": [],
+            "Features": [],
+            "BelongsToProduct": "AAD",
+            "ProductLicenses": [
+                "SPE_E5",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "4828c8ec-dc2e-4779-b502-87ac9ce28ab7",
+            "StringId": "MCOEV",
+            "Name": "PHONE SYSTEM",
+            "Aliases": [],
+            "BelongsToProduct": "MCO",
+            "ProductLicenses": [
+                "SPE_E5",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF",
+                "MCOEV"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "afc06cb0-b4f4-4473-8286-d644f70d8faf",
+            "StringId": "MCOIMP",
+            "Name": "SKYPE FOR BUSINESS ONLINE (PLAN 1)",
+            "Aliases": [],
+            "BelongsToProduct": "MCO",
+            "ProductLicenses": [
+                "SPE_F1",
+                "DESKLESSPACK",
+                "MCOIMP"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "70710b6b-3ab4-4a38-9f6d-9f169461650a",
+            "StringId": "MCOLITE",
+            "Name": "SKYPE FOR BUSINESS ONLINE (PLAN 1)",
+            "Aliases": [],
+            "BelongsToProduct": "MCO",
+            "ProductLicenses": [
+                "LITEPACK",
+                "LITEPACK_P2"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "3e26ee1f-8a5f-4d52-aee2-b81ce45c8f40",
+            "StringId": "MCOMEETADV",
+            "Name": "AUDIO CONFERENCING",
+            "Aliases": [],
+            "BelongsToProduct": "MCO",
+            "ProductLicenses": [
+                "MCOMEETADV",
+                "SPE_E5",
+                "ENTERPRISEPREMIUM"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "4ed3ff63-69d7-4fb7-b984-5aec7f605ca8",
+            "StringId": "MCOPSTN1",
+            "Name": "DOMESTIC CALLING PLAN",
+            "Aliases": [],
+            "BelongsToProduct": "MCO",
+            "ProductLicenses": [
+                "MCOPSTN1"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "5a10155d-f5c1-411a-a8ec-e99aae125390",
+            "StringId": "MCOPSTN2",
+            "Name": "DOMESTIC AND INTERNATIONAL CALLING PLAN",
+            "Aliases": [],
+            "BelongsToProduct": "MCO",
+            "ProductLicenses": [
+                "MCOPSTN2"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "54a152dc-90de-4996-93d2-bc47e670fc06",
+            "StringId": "MCOPSTN5",
+            "Name": "DOMESTIC CALLING PLAN",
+            "Aliases": [],
+            "BelongsToProduct": "MCO",
+            "ProductLicenses": [
+                "MCOPSTN5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
             "Guid": "0feaeb32-d00e-4d66-bd5a-43b5b83db82c",
             "StringId": "MCOSTANDARD",
             "Name": "SKYPE FOR BUSINESS ONLINE (PLAN 2)",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "S4B",
+            "BelongsToProduct": "MCO",
             "ProductLicenses": [
                 "SPB",
                 "SPE_E3",
@@ -126,160 +1053,13 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "1126bef5-da20-4f07-b45e-ad25d2581aa8",
-            "StringId": "EXCHANGE_S_ESSENTIALS",
-            "Name": "EXCHANGE ONLINE ESSENTIALS",
+            "Guid": "b2669e95-76ef-4e7e-a367-002f60a39f3e",
+            "StringId": "MCOSTANDARD_MIDMARKET",
+            "Name": "SKYPE FOR BUSINESS ONLINE (PLAN 2) FOR MIDSIZE",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EXO",
+            "BelongsToProduct": "MCO",
             "ProductLicenses": [
-                "EXCHANGE_S_ESSENTIALS"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "113feb6c-3fe4-4440-bddc-54d774bf0318",
-            "StringId": "EXCHANGE_S_FOUNDATION",
-            "Name": "EXCHANGE ONLINE FOUNDATION",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EXO",
-            "ProductLicenses": [
-                "WIN10_VDA_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "1259157c-8581-4875-bca7-2ffb18c51bda",
-            "StringId": "PROJECT_ESSENTIALS",
-            "Name": "PROJECT ESSENTIALS",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "PRJ",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
-                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
-                "DYN365_ENTERPRISE_SALES",
-                "DYN365_ENTERPRISE_TEAM_MEMBERS",
-                "PROJECTESSENTIALS"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "13696edf-5a08-49f6-8134-03083ed8ba30",
-            "StringId": "ONEDRIVESTANDARD",
-            "Name": "ONEDRIVE FOR BUSINESS",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "SPO",
-            "ProductLicenses": [
-                "O365_BUSINESS",
-                "SMB_BUSINESS",
-                "OFFICESUBSCRIPTION",
-                "WACONEDRIVESTANDARD"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "14ab5db5-e6c4-4b20-b4bc-13e36fd2227f",
-            "StringId": "ATA",
-            "Name": "AZURE ADVANCED THREAT PROTECTION",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "ATP",
-            "ProductLicenses": [
-                "EMSPREMIUM",
-                "SPE_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "159f4cd6-e380-449f-a816-af1a9ef76344",
-            "StringId": "FORMS_PLAN_E1",
-            "Name": "MICROSOFT FORMS (PLAN E1)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "FORMS",
-            "ProductLicenses": [
-                "SPB",
-                "O365_BUSINESS",
-                "SMB_BUSINESS",
-                "O365_BUSINESS_ESSENTIALS",
-                "SMB_BUSINESS_ESSENTIALS",
-                "O365_BUSINESS_PREMIUM",
-                "SMB_BUSINESS_PREMIUM",
-                "STANDARDPACK",
-                "STANDARDWOFFPACK",
-                "OFFICESUBSCRIPTION",
-                "WACONEDRIVESTANDARD",
-                "PROJECTESSENTIALS",
-                "PROJECTONLINE_PLAN_1",
-                "PROJECTONLINE_PLAN_2"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "176a09a6-7ec5-4039-ac02-b2791c6ba793",
-            "StringId": "EXCHANGE_S_ARCHIVE_ADDON",
-            "Name": "EXCHANGE ONLINE ARCHIVING FOR EXCHANGE ONLINE",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EXO",
-            "ProductLicenses": [
-                "EXCHANGEARCHIVE_ADDON",
-                "SPB"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "199a5c09-e0ca-4e37-8f7c-b05d533e1ea2",
-            "StringId": "MICROSOFTBOOKINGS",
-            "Name": "Microsoft Bookings",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "MICROSOFTBOOKINGS",
-            "ProductLicenses": [
-                "SPB",
-                "O365_BUSINESS_PREMIUM",
-                "SMB_BUSINESS_PREMIUM"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "1ec58c70-f69c-486a-8109-4b87ce86e449",
-            "StringId": "FLOW_DYN_TEAM",
-            "Name": "FLOW FOR DYNAMICS 365",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "FLOW",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_TEAM_MEMBERS"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "2125cfd7-2110-4567-83c4-c1cd5275163d",
-            "StringId": "BI_AZURE_P1",
-            "Name": "MICROSOFT POWER BI REPORTING AND ANALYTICS PLAN 1",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "POWERBI",
-            "ProductLicenses": [
-                "POWER_BI_ADDON"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "21b439ba-a0ca-424f-a6cc-52f954a5b111",
-            "StringId": "WIN10_PRO_ENT_SUB",
-            "Name": "WINDOWS 10 ENTERPRISE",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "W10",
-            "ProductLicenses": [
-                "SPE_E3",
-                "SPE_E5",
-                "WIN10_PRO_ENT_SUB"
+                "MIDSIZEPACK"
             ],
             "RequiredServicePlans": []
         },
@@ -288,86 +1068,9 @@
             "StringId": "MCOVOICECONF",
             "Name": "SKYPE FOR BUSINESS ONLINE (PLAN 3)",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "S4B",
+            "BelongsToProduct": "MCO",
             "ProductLicenses": [
                 "ENTERPRISEWITHSCAL"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "2789c901-c14e-48ab-a76a-be334d9d793a",
-            "StringId": "FORMS_PLAN_E3",
-            "Name": "MICROSOFT FORMS (PLAN E3)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "FORMS",
-            "ProductLicenses": [
-                "SPE_E3",
-                "ENTERPRISEPACK",
-                "ENTERPRISEWITHSCAL"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "2bdbaf8f-738f-4ac7-9234-3c3ee2ce7d0f",
-            "StringId": "VISIOONLINE",
-            "Name": "Visio Online",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "VISIO",
-            "ProductLicenses": [
-                "VISIOONLINE_PLAN1",
-                "VISIOCLIENT"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "2da8e897-7791-486b-b08f-cc63c8129df7",
-            "StringId": "DYN365_ENTERPRISE_SALES",
-            "Name": "DYNAMICS 365 FOR SALES",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_SALES"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2",
-            "StringId": "ADALLOM_S_STANDALONE",
-            "Name": "MICROSOFT CLOUD APP SECURITY",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "CAS",
-            "ProductLicenses": [
-                "EMSPREMIUM",
-                "SPE_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "300b8114-8555-4313-b861-0c115d820f50",
-            "StringId": "Dynamics_365_Onboarding_Free_PLAN",
-            "Name": "DYNAMICS 365 FOR TALENT: ONBOARD",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "Dynamics_365_for_Operations"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "33c4f319-9bdd-48d6-9c4d-410b750a4a5a",
-            "StringId": "MYANALYTICS_P2",
-            "Name": "Insights by MyAnalytics",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "ANALYTICS",
-            "ProductLicenses": [
-                "SPE_E5"
             ],
             "RequiredServicePlans": []
         },
@@ -376,7 +1079,6 @@
             "StringId": "MDM_SALES_COLLABORATION",
             "Name": "MICROSOFT DYNAMICS MARKETING SALES COLLABORATION - ELIGIBILITY CRITERIA APPLY",
             "Aliases": [],
-            "Weight": 100,
             "BelongsToProduct": "DYN",
             "ProductLicenses": [
                 "CRMSTANDARD"
@@ -384,91 +1086,11 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "34c0d7a0-a70f-4668-9238-47f9fc208882",
-            "StringId": "EXCHANGE_ANALYTICS",
-            "Name": "Microsoft MyAnalytics (Full)",
+            "Guid": "8a256a2b-b617-496d-b51b-e76466e88db0",
+            "StringId": "MFA_PREMIUM",
+            "Name": "MICROSOFT AZURE MULTI-FACTOR AUTHENTICATION",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "ANALYTICS",
-            "ProductLicenses": [
-                "SPE_E5",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "36b29273-c6d0-477a-aca6-6fbe24f538e3",
-            "StringId": "WHITEBOARD_FIRSTLINE1",
-            "Name": "Whiteboard (Firstline)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "WHITEBOARD",
-            "ProductLicenses": [
-                "SPE_F1"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "3e26ee1f-8a5f-4d52-aee2-b81ce45c8f40",
-            "StringId": "MCOMEETADV",
-            "Name": "AUDIO CONFERENCING",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "S4B",
-            "ProductLicenses": [
-                "MCOMEETADV",
-                "SPE_E5",
-                "ENTERPRISEPREMIUM"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "3e58e97c-9abe-ebab-cd5f-d543d1529634",
-            "StringId": "NBPROFESSIONALFORCRM",
-            "Name": "MICROSOFT SOCIAL ENGAGEMENT PROFESSIONAL - ELIGIBILITY CRITERIA APPLY",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "CRMSTANDARD"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "3fb82609-8c27-4f7b-bd51-30634711ee67",
-            "StringId": "BPOS_S_TODO_3",
-            "Name": "To-Do (Plan 3)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "TODO",
-            "ProductLicenses": [
-                "SPE_E5",
-                "DEVELOPERPACK",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "3ffba0d2-38e5-4d5e-8ec0-98f2b05c09d9",
-            "StringId": "STREAM_O365_K",
-            "Name": "MICROSOFT STREAM FOR O365 K SKU",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "STREAM",
-            "ProductLicenses": [
-                "SPE_F1",
-                "DESKLESSPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "41781fb2-bc02-4b7c-bd55-b576c07bb09d",
-            "StringId": "AAD_PREMIUM",
-            "Name": "AZURE ACTIVE DIRECTORY PREMIUM P1",
-            "Aliases": [],
-            "Weight": 100,
+            "Features": [],
             "BelongsToProduct": "AAD",
             "ProductLicenses": [
                 "AAD_PREMIUM",
@@ -484,16 +1106,114 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "41bf139a-4e60-409f-9346-a1361efc6dfb",
-            "StringId": "YAMMER_MIDSIZE",
-            "Name": "Yammer Midsize",
+            "Guid": "199a5c09-e0ca-4e37-8f7c-b05d533e1ea2",
+            "StringId": "MICROSOFTBOOKINGS",
+            "Name": "Microsoft Bookings",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "YAMMER",
+            "BelongsToProduct": "BOOKINGS",
             "ProductLicenses": [
+                "SPB",
+                "O365_BUSINESS_PREMIUM",
+                "SMB_BUSINESS_PREMIUM"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "94065c59-bc8e-4e8b-89e5-5138d471eaff",
+            "StringId": "MICROSOFT_SEARCH",
+            "Name": "Microsoft Search",
+            "Aliases": [],
+            "BelongsToProduct": "SEARCH",
+            "ProductLicenses": [
+                "SPE_E5",
+                "SPE_F1"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "5136a095-5cf0-4aff-bec3-e84448b38ea5",
+            "StringId": "MIP_S_CLP1",
+            "Name": "Information Protection for Office 365 - Standard",
+            "Aliases": [],
+            "BelongsToProduct": "MIP",
+            "ProductLicenses": [
+                "ENTERPRISEPACK",
+                "SPE_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "efb0351d-3b08-4503-993d-383af8de41e3",
+            "StringId": "MIP_S_CLP2",
+            "Name": "Information Protection for Office 365 - Premium",
+            "Aliases": [],
+            "BelongsToProduct": "MIP",
+            "ProductLicenses": [
+                "SPE_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "33c4f319-9bdd-48d6-9c4d-410b750a4a5a",
+            "StringId": "MYANALYTICS_P2",
+            "Name": "Insights by MyAnalytics",
+            "Aliases": [],
+            "BelongsToProduct": "ANALYTICS",
+            "ProductLicenses": [
+                "SPE_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "03acaee3-9492-4f40-aed4-bcb6b32981b6",
+            "StringId": "NBENTERPRISE",
+            "Name": "MICROSOFT SOCIAL ENGAGEMENT - SERVICE DISCONTINUATION",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_PLAN1",
+                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
+                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
+                "DYN365_ENTERPRISE_SALES"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "3e58e97c-9abe-ebab-cd5f-d543d1529634",
+            "StringId": "NBPROFESSIONALFORCRM",
+            "Name": "MICROSOFT SOCIAL ENGAGEMENT PROFESSIONAL - ELIGIBILITY CRITERIA APPLY",
+            "Aliases": [],
+            "BelongsToProduct": "DYN",
+            "ProductLicenses": [
+                "CRMSTANDARD"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "5bfe124c-bbdc-4494-8835-f1297d457d79",
+            "StringId": "O365_SB_Relationship_Management",
+            "Name": "OUTLOOK CUSTOMER MANAGER",
+            "Aliases": [],
+            "BelongsToProduct": "EXO",
+            "ProductLicenses": [
+                "SPB",
+                "O365_BUSINESS_PREMIUM",
+                "SMB_BUSINESS_PREMIUM"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "c63d4d19-e8cb-460e-b37c-4d6c34603745",
+            "StringId": "OFFICEMOBILE_SUBSCRIPTION",
+            "Name": "OFFICE MOBILE APPS FOR OFFICE 365",
+            "Aliases": [],
+            "BelongsToProduct": "OFFICE",
+            "ProductLicenses": [
+                "SPE_F1",
+                "O365_BUSINESS_ESSENTIALS",
                 "SMB_BUSINESS_ESSENTIALS",
-                "SMB_BUSINESS_PREMIUM",
-                "MIDSIZEPACK"
+                "STANDARDPACK",
+                "DESKLESSPACK"
             ],
             "RequiredServicePlans": []
         },
@@ -502,7 +1222,6 @@
             "StringId": "OFFICESUBSCRIPTION",
             "Name": "Office 365 ProPlus",
             "Aliases": [],
-            "Weight": 100,
             "BelongsToProduct": "OFFICE",
             "ProductLicenses": [
                 "SPE_E3",
@@ -522,93 +1241,106 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "4828c8ec-dc2e-4779-b502-87ac9ce28ab7",
-            "StringId": "MCOEV",
-            "Name": "PHONE SYSTEM",
+            "Guid": "094e7854-93fc-4d55-b2c0-3ab5369ebdc1",
+            "StringId": "OFFICE_BUSINESS",
+            "Name": "OFFICE 365 BUSINESS",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "S4B",
+            "BelongsToProduct": null,
+            "BelongsToPackageRef": "O365",
             "ProductLicenses": [
-                "SPE_E5",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF",
-                "MCOEV"
+                "SPB",
+                "O365_BUSINESS",
+                "SMB_BUSINESS",
+                "O365_BUSINESS_PREMIUM",
+                "SMB_BUSINESS_PREMIUM"
             ],
             "RequiredServicePlans": []
         },
         {
-            "Guid": "4a51bca5-1eff-43f5-878c-177680f191af",
-            "StringId": "WHITEBOARD_PLAN3",
-            "Name": "Whiteboard (Plan 3)",
+            "Guid": "8ca59559-e2ca-470b-b7dd-afd8c0dee963",
+            "StringId": "OFFICE_PRO_PLUS_SUBSCRIPTION_SMBIZ",
+            "Name": "OFFICE_PRO_PLUS_SUBSCRIPTION_SMBIZ",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "WHITEBOARD",
+            "BelongsToProduct": "OFFICE",
             "ProductLicenses": [
-                "SPE_E5"
+                "LITEPACK_P2"
             ],
             "RequiredServicePlans": []
         },
         {
-            "Guid": "4a82b400-a79f-41a4-b4e2-e94f5787b113",
-            "StringId": "EXCHANGE_S_DESKLESS",
-            "Name": "EXCHANGE ONLINE KIOSK",
+            "Guid": "afcafa6a-d966-4462-918c-ec0b4e0fe642",
+            "StringId": "ONEDRIVEENTERPRISE",
+            "Name": "OneDrive Enterprise",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EXO",
-            "ProductLicenses": [
-                "EXCHANGEDESKLESS",
-                "SPE_F1",
-                "DESKLESSPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "4de31727-a228-4ec3-a5bf-8e45b5ca48cc",
-            "StringId": "EQUIVIO_ANALYTICS",
-            "Name": "OFFICE 365 ADVANCED EDISCOVERY",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EDISCOVERY",
-            "ProductLicenses": [
-                "SPE_E5",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "4ed3ff63-69d7-4fb7-b984-5aec7f605ca8",
-            "StringId": "MCOPSTN1",
-            "Name": "DOMESTIC CALLING PLAN",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "S4B",
-            "ProductLicenses": [
-                "MCOPSTN1"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "5136a095-5cf0-4aff-bec3-e84448b38ea5",
-            "StringId": "MIP_S_CLP1",
-            "Name": "Information Protection for Office 365 - Standard",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "MIP",
-            "ProductLicenses": [
-                "SPE_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "527f7cdd-0e86-4c47-b879-f5fd357a3ac6",
-            "StringId": "SHAREPOINTWAC_DEVELOPER",
-            "Name": "OFFICE ONLINE FOR DEVELOPER",
-            "Aliases": [],
-            "Weight": 100,
             "BelongsToProduct": "SPO",
             "ProductLicenses": [
-                "DEVELOPERPACK"
+                "WACONEDRIVEENTERPRISE"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "13696edf-5a08-49f6-8134-03083ed8ba30",
+            "StringId": "ONEDRIVESTANDARD",
+            "Name": "ONEDRIVE FOR BUSINESS",
+            "Aliases": [],
+            "BelongsToProduct": "SPO",
+            "ProductLicenses": [
+                "O365_BUSINESS",
+                "SMB_BUSINESS",
+                "OFFICESUBSCRIPTION",
+                "WACONEDRIVESTANDARD"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "da792a53-cbc0-4184-a10d-e544dd34b3c1",
+            "StringId": "ONEDRIVE_BASIC",
+            "Name": "OneDrive Basic",
+            "Aliases": [],
+            "BelongsToProduct": "SPO",
+            "ProductLicenses": [
+                "VISIOONLINE_PLAN1",
+                "VISIOCLIENT"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "b1188c4c-1b36-4018-b48b-ee07604f6feb",
+            "StringId": "PAM_ENTERPRISE",
+            "Name": "Office 365 Privileged Access Management",
+            "Aliases": [],
+            "Features": [],
+            "BelongsToProduct": "AAD",
+            "ProductLicenses": [
+                "SPE_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "874fc546-6efe-4d22-90b8-5c4e7aa59f4b",
+            "StringId": "POWERAPPS_DYN_APPS",
+            "Name": "POWERAPPS FOR DYNAMICS 365",
+            "Aliases": [],
+            "BelongsToProduct": "POWERAPPS",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
+                "DYN365_FINANCIALS_BUSINESS_SKU",
+                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
+                "DYN365_ENTERPRISE_SALES",
+                "CRMPLAN2",
+                "POWERAPPS_DYN_APPS"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "0b03f40b-c404-40c3-8651-2aceb74365fa",
+            "StringId": "POWERAPPS_DYN_P2",
+            "Name": "POWERAPPS FOR DYNAMICS 365",
+            "Aliases": [],
+            "BelongsToProduct": "POWERAPPS",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_PLAN1",
+                "Dynamics_365_for_Operations"
             ],
             "RequiredServicePlans": []
         },
@@ -617,7 +1349,6 @@
             "StringId": "POWERAPPS_DYN_TEAM",
             "Name": "POWERAPPS FOR DYNAMICS 365",
             "Aliases": [],
-            "Weight": 100,
             "BelongsToProduct": "POWERAPPS",
             "ProductLicenses": [
                 "POWERAPPS_DYN_TEAM"
@@ -625,42 +1356,83 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "54a152dc-90de-4996-93d2-bc47e670fc06",
-            "StringId": "MCOPSTN5",
-            "Name": "DOMESTIC CALLING PLAN",
+            "Guid": "92f7a6f3-b89b-4bbd-8c30-809e6da5ad1c",
+            "StringId": "POWERAPPS_O365_P1",
+            "Name": "POWERAPPS FOR OFFICE 365",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "S4B",
+            "BelongsToProduct": "POWERAPPS",
             "ProductLicenses": [
-                "MCOPSTN5"
+                "SPB",
+                "O365_BUSINESS_ESSENTIALS",
+                "SMB_BUSINESS_ESSENTIALS",
+                "O365_BUSINESS_PREMIUM",
+                "SMB_BUSINESS_PREMIUM",
+                "STANDARDPACK",
+                "STANDARDWOFFPACK"
             ],
             "RequiredServicePlans": []
         },
         {
-            "Guid": "5689bec4-755d-4753-8b61-40975025187c",
-            "StringId": "RMS_S_PREMIUM2",
-            "Name": "AZURE INFORMATION PROTECTION PREMIUM P2",
+            "Guid": "c68f8d98-5534-41c8-bf36-22fa496fa792",
+            "StringId": "POWERAPPS_O365_P2",
+            "Name": "POWERAPPS FOR OFFICE 365",
             "Aliases": [],
-            "Weight": 100,
+            "BelongsToProduct": "POWERAPPS",
+            "ProductLicenses": [
+                "SPE_E3",
+                "ENTERPRISEPACK",
+                "DEVELOPERPACK",
+                "ENTERPRISEWITHSCAL"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "9c0dab89-a30c-4117-86e7-97bda240acd2",
+            "StringId": "POWERAPPS_O365_P3",
+            "Name": "POWERAPPS FOR OFFICE 365 (Plan 3)",
+            "Aliases": [],
+            "BelongsToProduct": "POWERAPPS",
+            "ProductLicenses": [
+                "SPE_E5",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "e0287f9f-e222-4f98-9a83-f379e249159a",
+            "StringId": "POWERAPPS_O365_S1",
+            "Name": "POWERAPPS FOR OFFICE 365 K1",
+            "Aliases": [],
+            "BelongsToProduct": "POWERAPPS",
+            "ProductLicenses": [
+                "SPE_F1",
+                "DESKLESSPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "617b097b-4b93-4ede-83de-5f075bb5fb2f",
+            "StringId": "PREMIUM_ENCRYPTION",
+            "Name": "Premium Encryption in Office 365",
+            "Aliases": [],
             "BelongsToProduct": "MIP",
             "ProductLicenses": [
-                "EMSPREMIUM",
                 "SPE_E5"
             ],
             "RequiredServicePlans": []
         },
         {
-            "Guid": "57ff2da0-773e-42df-b2af-ffb7a2317929",
-            "StringId": "TEAMS1",
-            "Name": "Microsoft Teams",
+            "Guid": "b737dad2-2f6c-4c65-90e3-ca563267e8b9",
+            "StringId": "PROJECTWORKMANAGEMENT",
+            "Name": "MICROSOFT PLANNER",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "TEAMS",
+            "BelongsToProduct": "PLANNER",
             "ProductLicenses": [
                 "SPB",
                 "SPE_E3",
                 "SPE_E5",
-                "SPE_F1",
+                "SPE_E3_USGOV_GCCHIGH",
                 "O365_BUSINESS_ESSENTIALS",
                 "SMB_BUSINESS_ESSENTIALS",
                 "O365_BUSINESS_PREMIUM",
@@ -669,36 +1441,113 @@
                 "STANDARDWOFFPACK",
                 "ENTERPRISEPACK",
                 "DEVELOPERPACK",
+                "ENTERPRISEPACK_USGOV_GCCHIGH",
                 "ENTERPRISEWITHSCAL",
                 "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF",
-                "DESKLESSPACK"
+                "ENTERPRISEPREMIUM_NOPSTNCONF"
             ],
             "RequiredServicePlans": []
         },
         {
-            "Guid": "5a10155d-f5c1-411a-a8ec-e99aae125390",
-            "StringId": "MCOPSTN2",
-            "Name": "DOMESTIC AND INTERNATIONAL CALLING PLAN",
+            "Guid": "fafd7243-e5c1-4a3a-9e40-495efcb1d3c3",
+            "StringId": "PROJECT_CLIENT_SUBSCRIPTION",
+            "Name": "PROJECT ONLINE DESKTOP CLIENT",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "S4B",
+            "BelongsToProduct": "PRJO",
             "ProductLicenses": [
-                "MCOPSTN2"
+                "DYN365_ENTERPRISE_PLAN1",
+                "PROJECTCLIENT",
+                "PROJECTPREMIUM",
+                "PROJECTPROFESSIONAL",
+                "PROJECTONLINE_PLAN_2"
             ],
             "RequiredServicePlans": []
         },
         {
-            "Guid": "5bfe124c-bbdc-4494-8835-f1297d457d79",
-            "StringId": "O365_SB_Relationship_Management",
-            "Name": "OUTLOOK CUSTOMER MANAGER",
+            "Guid": "1259157c-8581-4875-bca7-2ffb18c51bda",
+            "StringId": "PROJECT_ESSENTIALS",
+            "Name": "PROJECT ESSENTIALS",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EXO",
+            "BelongsToProduct": "PRJO",
             "ProductLicenses": [
+                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
+                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
+                "DYN365_ENTERPRISE_SALES",
+                "DYN365_ENTERPRISE_TEAM_MEMBERS",
+                "PROJECTESSENTIALS"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "bea4c11e-220a-4e6d-8eb8-8ea15d019f90",
+            "StringId": "RMS_S_ENTERPRISE",
+            "Name": "MICROSOFT AZURE ACTIVE DIRECTORY RIGHTS",
+            "Aliases": [],
+            "Features": [],
+            "BelongsToProduct": "AAD",
+            "ProductLicenses": [
+                "RIGHTSMANAGEMENT",
+                "EMS",
+                "EMSPREMIUM",
                 "SPB",
-                "O365_BUSINESS_PREMIUM",
-                "SMB_BUSINESS_PREMIUM"
+                "SPE_E3",
+                "SPE_E5",
+                "SPE_E3_USGOV_DOD",
+                "SPE_E3_USGOV_GCCHIGH",
+                "SPE_F1",
+                "ENTERPRISEPACK",
+                "ENTERPRISEPACK_USGOV_DOD",
+                "ENTERPRISEPACK_USGOV_GCCHIGH",
+                "ENTERPRISEWITHSCAL",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "6c57d4b6-3b23-47a5-9bc9-69f17b4947b3",
+            "StringId": "RMS_S_PREMIUM",
+            "Name": "Microsoft Information Protection Premium (Plan 1)",
+            "Aliases": [
+                "Azure Information Protection Premium (Plan 1)"
+            ],
+            "BelongsToProduct": "MIP",
+            "ProductLicenses": [
+                "RIGHTSMANAGEMENT",
+                "EMS",
+                "EMSPREMIUM",
+                "SPB",
+                "SPE_E3",
+                "SPE_E5",
+                "SPE_E3_USGOV_DOD",
+                "SPE_E3_USGOV_GCCHIGH",
+                "SPE_F1"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "5689bec4-755d-4753-8b61-40975025187c",
+            "StringId": "RMS_S_PREMIUM2",
+            "Name": "Microsoft Information Protection Premium (Plan 2)",
+            "Aliases": [
+                "Azure Information Protection Premium (Plan 2)"
+            ],
+            "BelongsToProduct": "MIP",
+            "ProductLicenses": [
+                "EMSPREMIUM",
+                "SPE_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "902b47e5-dcb2-4fdc-858b-c63a90a2bdb9",
+            "StringId": "SHAREPOINTDESKLESS",
+            "Name": "SHAREPOINT ONLINE KIOSK",
+            "Aliases": [],
+            "BelongsToProduct": "SPO",
+            "ProductLicenses": [
+                "SPE_F1",
+                "DESKLESSPACK"
             ],
             "RequiredServicePlans": []
         },
@@ -707,7 +1556,6 @@
             "StringId": "SHAREPOINTENTERPRISE",
             "Name": "SHAREPOINT ONLINE (PLAN 2)",
             "Aliases": [],
-            "Weight": 100,
             "BelongsToProduct": "SPO",
             "ProductLicenses": [
                 "DYN365_ENTERPRISE_PLAN1",
@@ -736,89 +1584,10 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "5e62787c-c316-451f-b873-1d05acd4d12c",
-            "StringId": "BPOS_S_TODO_1",
-            "Name": "Microsoft To-Do",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "TODO",
-            "ProductLicenses": [
-                "SPB",
-                "O365_BUSINESS_ESSENTIALS",
-                "SMB_BUSINESS_ESSENTIALS",
-                "O365_BUSINESS_PREMIUM",
-                "SMB_BUSINESS_PREMIUM",
-                "STANDARDPACK",
-                "STANDARDWOFFPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "617b097b-4b93-4ede-83de-5f075bb5fb2f",
-            "StringId": "PREMIUM_ENCRYPTION",
-            "Name": "Premium Encryption in Office 365",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "MIP",
-            "ProductLicenses": [
-                "SPE_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "643d201a-9884-45be-962a-06ba97062e5e",
-            "StringId": "DYN365_Enterprise_Talent_Attract_TeamMember",
-            "Name": "DYNAMICS 365 FOR TALENT - ATTRACT EXPERIENCE TEAM MEMBER",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_TEAM_MEMBERS"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "65a1ebf4-6732-4f00-9dcb-3d115ffdeecd",
-            "StringId": "DYN365_TALENT_ENTERPRISE",
-            "Name": "DYNAMICS 365 FOR TALENT",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "Dynamics_365_for_Operations"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "663a804f-1c30-4ff0-9915-9db84f0d1cea",
-            "StringId": "VISIO_CLIENT_SUBSCRIPTION",
-            "Name": "Visio Professional",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "VISIO",
-            "ProductLicenses": [
-                "VISIOCLIENT"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "6a54b05e-4fab-40e7-9828-428db3b336fa",
-            "StringId": "DYN365_ENTERPRISE_TEAM_MEMBERS",
-            "Name": "DYNAMICS 365 FOR TEAM MEMBERS",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_TEAM_MEMBERS"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
             "Guid": "6b5b6a67-fc72-4a1f-a2b5-beecf05de761",
             "StringId": "SHAREPOINTENTERPRISE_MIDMARKET",
             "Name": "SHAREPOINTENTERPRISE_MIDMARKET",
             "Aliases": [],
-            "Weight": 100,
             "BelongsToProduct": "SPO",
             "ProductLicenses": [
                 "SHAREPOINTENTERPRISE_MIDMARKET"
@@ -826,47 +1595,11 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "6c57d4b6-3b23-47a5-9bc9-69f17b4947b3",
-            "StringId": "RMS_S_PREMIUM",
-            "Name": "AZURE INFORMATION PROTECTION PREMIUM P1",
+            "Guid": "a1f3d0a8-84c0-4ae0-bae4-685917b8ab48",
+            "StringId": "SHAREPOINTLITE",
+            "Name": "SharePoint Lite",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "MIP",
-            "ProductLicenses": [
-                "RIGHTSMANAGEMENT",
-                "EMS",
-                "EMSPREMIUM",
-                "SPB",
-                "SPE_E3",
-                "SPE_E5",
-                "SPE_E3_USGOV_DOD",
-                "SPE_E3_USGOV_GCCHIGH",
-                "SPE_F1"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "6c6042f5-6f01-4d67-b8c1-eb99d36eed3e",
-            "StringId": "STREAM_O365_E5",
-            "Name": "MICROSOFT STREAM FOR O365 E5 SKU",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "STREAM",
-            "ProductLicenses": [
-                "SPE_E5",
-                "DEVELOPERPACK",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "70710b6b-3ab4-4a38-9f6d-9f169461650a",
-            "StringId": "MCOLITE",
-            "Name": "SKYPE FOR BUSINESS ONLINE (PLAN P1)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "S4B",
+            "BelongsToProduct": "SPO",
             "ProductLicenses": [
                 "LITEPACK",
                 "LITEPACK_P2"
@@ -874,38 +1607,121 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "70d33638-9c74-4d01-bfd3-562de28bd4ba",
-            "StringId": "BI_AZURE_P2",
-            "Name": "POWER BI PRO",
+            "Guid": "c7699d2e-19aa-44de-8edf-1736da088ca1",
+            "StringId": "SHAREPOINTSTANDARD",
+            "Name": "SharePoint Standard",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "POWERBI",
+            "BelongsToProduct": "SPO",
             "ProductLicenses": [
-                "SPE_E5",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF",
-                "POWER_BI_PRO"
+                "SPB",
+                "O365_BUSINESS_ESSENTIALS",
+                "SMB_BUSINESS_ESSENTIALS",
+                "O365_BUSINESS_PREMIUM",
+                "SMB_BUSINESS_PREMIUM",
+                "STANDARDPACK",
+                "STANDARDWOFFPACK",
+                "SHAREPOINTSTANDARD"
             ],
             "RequiredServicePlans": []
         },
         {
-            "Guid": "73b2a583-6a59-42e3-8e83-54db46bc3278",
-            "StringId": "KAIZALA_O365_P1",
-            "Name": "Microsoft Kaizala Pro Plan 1",
+            "Guid": "e95bec33-7c88-4a70-8e19-b10bd9d0c014",
+            "StringId": "SHAREPOINTWAC",
+            "Name": "OFFICE ONLINE",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "KAIZALA",
+            "BelongsToProduct": "SPO",
             "ProductLicenses": [
-                "SPE_F1"
+                "DYN365_ENTERPRISE_PLAN1",
+                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
+                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
+                "DYN365_ENTERPRISE_SALES",
+                "DYN365_ENTERPRISE_TEAM_MEMBERS",
+                "SPB",
+                "SPE_E3",
+                "SPE_E5",
+                "SPE_E3_USGOV_DOD",
+                "SPE_E3_USGOV_GCCHIGH",
+                "SPE_F1",
+                "O365_BUSINESS",
+                "SMB_BUSINESS",
+                "O365_BUSINESS_ESSENTIALS",
+                "SMB_BUSINESS_ESSENTIALS",
+                "O365_BUSINESS_PREMIUM",
+                "SMB_BUSINESS_PREMIUM",
+                "STANDARDPACK",
+                "STANDARDWOFFPACK",
+                "ENTERPRISEPACK",
+                "DEVELOPERPACK",
+                "ENTERPRISEPACK_USGOV_DOD",
+                "ENTERPRISEPACK_USGOV_GCCHIGH",
+                "ENTERPRISEWITHSCAL",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF",
+                "DESKLESSPACK",
+                "MIDSIZEPACK",
+                "OFFICESUBSCRIPTION",
+                "WACONEDRIVESTANDARD",
+                "WACONEDRIVEENTERPRISE",
+                "PROJECTPREMIUM",
+                "PROJECTONLINE_PLAN_1",
+                "PROJECTPROFESSIONAL",
+                "PROJECTONLINE_PLAN_2"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "527f7cdd-0e86-4c47-b879-f5fd357a3ac6",
+            "StringId": "SHAREPOINTWAC_DEVELOPER",
+            "Name": "OFFICE ONLINE FOR DEVELOPER",
+            "Aliases": [],
+            "BelongsToProduct": "SPO",
+            "ProductLicenses": [
+                "DEVELOPERPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "fe71d6c3-a2ea-4499-9778-da042bf08063",
+            "StringId": "SHAREPOINT_PROJECT",
+            "Name": "PROJECT ONLINE SERVICE",
+            "Aliases": [],
+            "BelongsToProduct": "SPO",
+            "ProductLicenses": [
+                "DYN365_ENTERPRISE_PLAN1",
+                "PROJECTPREMIUM",
+                "PROJECTONLINE_PLAN_1",
+                "PROJECTPROFESSIONAL",
+                "PROJECTONLINE_PLAN_2"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "a361d6e2-509e-4e25-a8ad-950060064ef4",
+            "StringId": "SHAREPOINT_S_DEVELOPER",
+            "Name": "SharePoint Standard Developer",
+            "Aliases": [],
+            "BelongsToProduct": "SPO",
+            "ProductLicenses": [
+                "DEVELOPERPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "fc0a60aa-feee-4746-a0e3-aecfe81a38dd",
+            "StringId": "SQL_IS_SSIM",
+            "Name": "MICROSOFT POWER BI INFORMATION SERVICES PLAN 1",
+            "Aliases": [],
+            "BelongsToProduct": "POWERBI",
+            "ProductLicenses": [
+                "POWER_BI_ADDON"
             ],
             "RequiredServicePlans": []
         },
         {
             "Guid": "743dd19e-1ce3-4c62-a3ad-49ba8f63a2f6",
             "StringId": "STREAM_O365_E1",
-            "Name": "MICROSOFT STREAM FOR O365 E1 SKU",
+            "Name": "MICROSOFT STREAM FOR O365 E1",
             "Aliases": [],
-            "Weight": 100,
             "BelongsToProduct": "STREAM",
             "ProductLicenses": [
                 "SPB",
@@ -915,398 +1731,10 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "7547a3fe-08ee-4ccb-b430-5077c5041653",
-            "StringId": "YAMMER_ENTERPRISE",
-            "Name": "Yammer Enterprise",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "YAM",
-            "ProductLicenses": [
-                "SPB",
-                "SPE_E3",
-                "SPE_E5",
-                "SPE_F1",
-                "O365_BUSINESS_ESSENTIALS",
-                "O365_BUSINESS_PREMIUM",
-                "STANDARDPACK",
-                "STANDARDWOFFPACK",
-                "ENTERPRISEPACK",
-                "ENTERPRISEWITHSCAL",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF",
-                "DESKLESSPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "2078e8df-cff6-4290-98cb-5408261a760a",
-            "StringId": "YAMMER_EDU",
-            "Name": "Yammer for Education (HIDDEN)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "YAM",
-            "ProductLicenses": [],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "76846ad7-7776-4c40-a281-a386362dd1b9",
-            "StringId": "FLOW_O365_P2",
-            "Name": "FLOW FOR OFFICE 365",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "FLOW",
-            "ProductLicenses": [
-                "SPE_E3",
-                "ENTERPRISEPACK",
-                "DEVELOPERPACK",
-                "ENTERPRISEWITHSCAL"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "7e6d7d78-73de-46ba-83b1-6d25117334ba",
-            "StringId": "FLOW_DYN_APPS",
-            "Name": "FLOW FOR DYNAMICS 365",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "FLOW",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
-                "DYN365_FINANCIALS_BUSINESS_SKU",
-                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
-                "DYN365_ENTERPRISE_SALES",
-                "CRMPLAN2",
-                "CRMSTANDARD"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "80873e7a-cd2a-4e67-b061-1b5381a676a5",
-            "StringId": "BPOS_S_TODO_FIRSTLINE",
-            "Name": "To-Do (Firstline)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "TODO",
-            "ProductLicenses": [
-                "SPE_F1",
-                "DESKLESSPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "871d91ec-ec1a-452b-a83f-bd76c7d770ef",
-            "StringId": "WINDEFATP",
-            "Name": "Microsoft Defender Advanced Threat Protection",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "W10",
-            "ProductLicenses": [
-                "SPE_E5",
-                "WIN10_VDA_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "874fc546-6efe-4d22-90b8-5c4e7aa59f4b",
-            "StringId": "POWERAPPS_DYN_APPS",
-            "Name": "POWERAPPS FOR DYNAMICS 365",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "POWERAPPS",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
-                "DYN365_FINANCIALS_BUSINESS_SKU",
-                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
-                "DYN365_ENTERPRISE_SALES",
-                "CRMPLAN2",
-                "POWERAPPS_DYN_APPS"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "882e1d05-acd1-4ccb-8708-6ee03664b117",
-            "StringId": "INTUNE_O365",
-            "Name": "Mobile Device Management for Office 365",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "INT",
-            "ProductLicenses": [
-                "SPE_E5",
-                "SPE_F1"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "8a256a2b-b617-496d-b51b-e76466e88db0",
-            "StringId": "MFA_PREMIUM",
-            "Name": "MICROSOFT AZURE MULTI-FACTOR AUTHENTICATION",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "AAD",
-            "ProductLicenses": [
-                "AAD_PREMIUM",
-                "AAD_PREMIUM_P2",
-                "EMS",
-                "EMSPREMIUM",
-                "SPE_E3",
-                "SPE_E5",
-                "SPE_E3_USGOV_DOD",
-                "SPE_E3_USGOV_GCCHIGH",
-                "SPE_F1"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "8c098270-9dd4-4350-9b30-ba4703f3b36b",
-            "StringId": "ADALLOM_S_O365",
-            "Name": "OFFICE 365 CLOUD APP SECURITY",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "CAS",
-            "ProductLicenses": [
-                "SPE_E5",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "8c7d2df8-86f0-4902-b2ed-a0458298f3b3",
-            "StringId": "Deskless",
-            "Name": "MICROSOFT STAFFHUB",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "SHUB",
-            "ProductLicenses": [
-                "SPB",
-                "SPE_E3",
-                "SPE_E5",
-                "SPE_F1",
-                "O365_BUSINESS_PREMIUM",
-                "SMB_BUSINESS_PREMIUM",
-                "STANDARDPACK",
-                "STANDARDWOFFPACK",
-                "ENTERPRISEPACK",
-                "ENTERPRISEWITHSCAL",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF",
-                "DESKLESSPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "8ca59559-e2ca-470b-b7dd-afd8c0dee963",
-            "StringId": "OFFICE_PRO_PLUS_SUBSCRIPTION_SMBIZ",
-            "Name": "OFFICE_PRO_PLUS_SUBSCRIPTION_SMBIZ",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "OFFICE",
-            "ProductLicenses": [
-                "LITEPACK_P2"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "8e0c0a52-6a6c-4d40-8370-dd62790dcd70",
-            "StringId": "THREAT_INTELLIGENCE",
-            "Name": "OFFICE 365 ADVANCED THREAT PROTECTION (PLAN 2)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "OATP",
-            "ProductLicenses": [
-                "SPE_E5",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "8e229017-d77b-43d5-9305-903395523b99",
-            "StringId": "WINBIZ",
-            "Name": "WINDOWS 10 BUSINESS",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "W10",
-            "ProductLicenses": [
-                "SPB"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "8e9ff0ff-aa7a-4b20-83c1-2f636b600ac2",
-            "StringId": "INTUNE_SMBIZ",
-            "Name": "INTUNE_SMBIZ",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "INT",
-            "ProductLicenses": [
-                "SPB"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "902b47e5-dcb2-4fdc-858b-c63a90a2bdb9",
-            "StringId": "SHAREPOINTDESKLESS",
-            "Name": "SHAREPOINT ONLINE KIOSK",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "SPO",
-            "ProductLicenses": [
-                "SPE_F1",
-                "DESKLESSPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "90927877-dcff-4af6-b346-2332c0b15bb7",
-            "StringId": "EXCHANGE_B_STANDARD",
-            "Name": "EXCHANGE ONLINE POP",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EXO",
-            "ProductLicenses": [
-                "EXCHANGETELCO"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "920656a2-7dd8-4c83-97b6-a356414dbd36",
-            "StringId": "DYN365_FINANCIALS_BUSINESS",
-            "Name": "DYNAMICS 365 FOR FINANCIALS",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "DYN365_FINANCIALS_BUSINESS_SKU"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "92f7a6f3-b89b-4bbd-8c30-809e6da5ad1c",
-            "StringId": "POWERAPPS_O365_P1",
-            "Name": "POWERAPPS FOR OFFICE 365",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "POWERAPPS",
-            "ProductLicenses": [
-                "SPB",
-                "O365_BUSINESS_ESSENTIALS",
-                "SMB_BUSINESS_ESSENTIALS",
-                "O365_BUSINESS_PREMIUM",
-                "SMB_BUSINESS_PREMIUM",
-                "STANDARDPACK",
-                "STANDARDWOFFPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "932ad362-64a8-4783-9106-97849a1a30b9",
-            "StringId": "ADALLOM_S_DISCOVERY",
-            "Name": "CLOUD APP SECURITY DISCOVERY",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "CAS",
-            "ProductLicenses": [
-                "AAD_PREMIUM",
-                "AAD_PREMIUM_P2",
-                "EMS",
-                "SPE_E3",
-                "SPE_E3_USGOV_GCCHIGH",
-                "SPE_F1"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "94065c59-bc8e-4e8b-89e5-5138d471eaff",
-            "StringId": "MICROSOFT_SEARCH",
-            "Name": "Microsoft Search",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "SEARCH",
-            "ProductLicenses": [
-                "SPE_E5",
-                "SPE_F1"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "95d2cd7b-1007-484b-8595-5e97e63fe189",
-            "StringId": "DYNAMICS_365_FOR_OPERATIONS",
-            "Name": "Dynamics 365 for Operations",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "Dynamics_365_for_Operations"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "99340b49-fb81-4b1e-976b-8f2ae8e9394f",
-            "StringId": "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
-            "Name": "DYNAMICS 365 FOR CUSTOMER SERVICE",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_CUSTOMER_SERVICE"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "9953b155-8aef-4c56-92f3-72b0487fce41",
-            "StringId": "TEAMS_AR_GCCHIGH",
-            "Name": "Microsoft Teams for GCCHigh (AR)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "TEAMS",
-            "ProductLicenses": [
-                "SPE_E3_USGOV_GCCHIGH",
-                "ENTERPRISEPACK_USGOV_GCCHIGH"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "9aaf7827-d63c-4b61-89c3-182f06f82e5c",
-            "StringId": "EXCHANGE_S_STANDARD",
-            "Name": "EXCHANGE ONLINE (PLAN 1)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EXO",
-            "ProductLicenses": [
-                "EXCHANGESTANDARD",
-                "EXCHANGEESSENTIALS",
-                "SPB",
-                "O365_BUSINESS_ESSENTIALS",
-                "SMB_BUSINESS_ESSENTIALS",
-                "O365_BUSINESS_PREMIUM",
-                "SMB_BUSINESS_PREMIUM",
-                "STANDARDPACK",
-                "STANDARDWOFFPACK",
-                "MIDSIZEPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "9c0dab89-a30c-4117-86e7-97bda240acd2",
-            "StringId": "POWERAPPS_O365_P3",
-            "Name": "POWERAPPS FOR OFFICE 365 (Plan 3)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "POWERAPPS",
-            "ProductLicenses": [
-                "SPE_E5",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
             "Guid": "9e700747-8b1d-45e5-ab8d-ef187ceec156",
             "StringId": "STREAM_O365_E3",
-            "Name": "MICROSOFT STREAM FOR O365 E3 SKU",
+            "Name": "MICROSOFT STREAM FOR O365 E3",
             "Aliases": [],
-            "Weight": 100,
             "BelongsToProduct": "STREAM",
             "ProductLicenses": [
                 "SPE_E3",
@@ -1320,29 +1748,28 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "9f431833-0334-42de-a7dc-70aa40db46db",
-            "StringId": "LOCKBOX_ENTERPRISE",
-            "Name": "Customer Lockbox",
+            "Guid": "6c6042f5-6f01-4d67-b8c1-eb99d36eed3e",
+            "StringId": "STREAM_O365_E5",
+            "Name": "MICROSOFT STREAM FOR O365 E5",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "AAD",
+            "BelongsToProduct": "STREAM",
             "ProductLicenses": [
                 "SPE_E5",
+                "DEVELOPERPACK",
                 "ENTERPRISEPREMIUM",
                 "ENTERPRISEPREMIUM_NOPSTNCONF"
             ],
             "RequiredServicePlans": []
         },
         {
-            "Guid": "a1f3d0a8-84c0-4ae0-bae4-685917b8ab48",
-            "StringId": "SHAREPOINTLITE",
-            "Name": "SharePoint Lite",
+            "Guid": "3ffba0d2-38e5-4d5e-8ec0-98f2b05c09d9",
+            "StringId": "STREAM_O365_K",
+            "Name": "MICROSOFT STREAM FOR O365 K",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "SPO",
+            "BelongsToProduct": "STREAM",
             "ProductLicenses": [
-                "LITEPACK",
-                "LITEPACK_P2"
+                "SPE_F1",
+                "DESKLESSPACK"
             ],
             "RequiredServicePlans": []
         },
@@ -1351,7 +1778,6 @@
             "StringId": "SWAY",
             "Name": "Sway",
             "Aliases": [],
-            "Weight": 100,
             "BelongsToProduct": "SWAY",
             "ProductLicenses": [
                 "SPB",
@@ -1385,103 +1811,16 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "a361d6e2-509e-4e25-a8ad-950060064ef4",
-            "StringId": "SHAREPOINT_S_DEVELOPER",
-            "Name": "SharePoint Standard Developer",
+            "Guid": "57ff2da0-773e-42df-b2af-ffb7a2317929",
+            "StringId": "TEAMS1",
+            "Name": "Microsoft Teams",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "SPO",
-            "ProductLicenses": [
-                "DEVELOPERPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "a9e39199-8369-444b-89c1-5fe65ec45665",
-            "StringId": "Dynamics_365_for_Retail",
-            "Name": "DYNAMICS 365 FOR RETAIL",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "Dynamics_365_for_Operations"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "afc06cb0-b4f4-4473-8286-d644f70d8faf",
-            "StringId": "MCOIMP",
-            "Name": "SKYPE FOR BUSINESS ONLINE (PLAN 1)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "S4B",
-            "ProductLicenses": [
-                "SPE_F1",
-                "DESKLESSPACK",
-                "MCOIMP"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "afcafa6a-d966-4462-918c-ec0b4e0fe642",
-            "StringId": "ONEDRIVEENTERPRISE",
-            "Name": "OneDrive Enterprise",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "SPO",
-            "ProductLicenses": [
-                "WACONEDRIVEENTERPRISE"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "b1188c4c-1b36-4018-b48b-ee07604f6feb",
-            "StringId": "PAM_ENTERPRISE",
-            "Name": "Office 365 Privileged Access Management",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "AAD",
-            "ProductLicenses": [
-                "SPE_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "b2669e95-76ef-4e7e-a367-002f60a39f3e",
-            "StringId": "MCOSTANDARD_MIDMARKET",
-            "Name": "SKYPE FOR BUSINESS ONLINE (PLAN 2) FOR MIDSIZE",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "S4B",
-            "ProductLicenses": [
-                "MIDSIZEPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "b650d915-9886-424b-a08d-633cede56f57",
-            "StringId": "FLOW_DYN_P2",
-            "Name": "FLOW FOR DYNAMICS 365",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "FLOW",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_PLAN1"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "b737dad2-2f6c-4c65-90e3-ca563267e8b9",
-            "StringId": "PROJECTWORKMANAGEMENT",
-            "Name": "MICROSOFT PLANNER",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "PLANNER",
+            "BelongsToProduct": "TEAMS",
             "ProductLicenses": [
                 "SPB",
                 "SPE_E3",
                 "SPE_E5",
-                "SPE_E3_USGOV_GCCHIGH",
+                "SPE_F1",
                 "O365_BUSINESS_ESSENTIALS",
                 "SMB_BUSINESS_ESSENTIALS",
                 "O365_BUSINESS_PREMIUM",
@@ -1490,589 +1829,10 @@
                 "STANDARDWOFFPACK",
                 "ENTERPRISEPACK",
                 "DEVELOPERPACK",
-                "ENTERPRISEPACK_USGOV_GCCHIGH",
-                "ENTERPRISEWITHSCAL",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "bd91b1a4-9f94-4ecf-b45b-3a65e5c8128a",
-            "StringId": "FLOW_O365_S1",
-            "Name": "FLOW FOR OFFICE 365 K1",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "FLOW",
-            "ProductLicenses": [
-                "SPE_F1",
-                "DESKLESSPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "bea4c11e-220a-4e6d-8eb8-8ea15d019f90",
-            "StringId": "RMS_S_ENTERPRISE",
-            "Name": "MICROSOFT AZURE ACTIVE DIRECTORY RIGHTS",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "AAD",
-            "ProductLicenses": [
-                "RIGHTSMANAGEMENT",
-                "EMS",
-                "EMSPREMIUM",
-                "SPB",
-                "SPE_E3",
-                "SPE_E5",
-                "SPE_E3_USGOV_DOD",
-                "SPE_E3_USGOV_GCCHIGH",
-                "SPE_F1",
-                "ENTERPRISEPACK",
-                "ENTERPRISEPACK_USGOV_DOD",
-                "ENTERPRISEPACK_USGOV_GCCHIGH",
-                "ENTERPRISEWITHSCAL",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "119cf168-b6cf-41fb-b82e-7fee7bae5814",
-            "StringId": "CRMPLAN1",
-            "Name": "MICROSOFT DYNAMICS CRM ONLINE BASIC (HIDDEN)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "bf36ca64-95c6-4918-9275-eb9f4ce2c04f",
-            "StringId": "CRMPLAN2",
-            "Name": "MICROSOFT DYNAMICS CRM ONLINE BASIC",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "CRMPLAN2"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "c0454a3d-32b5-4740-b090-78c32f48f0ad",
-            "StringId": "Dynamics_365_for_Retail_Team_members",
-            "Name": "DYNAMICS 365 FOR RETAIL TEAM MEMBERS",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_TEAM_MEMBERS"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "c1ec4a95-1f05-45b3-a911-aa3fa01094f5",
-            "StringId": "INTUNE_A",
-            "Name": "MICROSOFT INTUNE",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "INT",
-            "ProductLicenses": [
-                "EMS",
-                "EMSPREMIUM",
-                "INTUNE_A",
-                "SPE_E3",
-                "SPE_E5",
-                "SPE_E3_USGOV_DOD",
-                "SPE_E3_USGOV_GCCHIGH",
-                "SPE_F1"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "3e170737-c728-4eae-bbb9-3f3360f7184c",
-            "StringId": "INTUNE_A_VL",
-            "Name": "MICROSOFT INTUNE (HIDDEN)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "INT",
-            "ProductLicenses": [],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "2dc63b8a-df3d-448f-b683-8655877c9360",
-            "StringId": "INTUNE_B",
-            "Name": "MICROSOFT INTUNE B (HIDDEN)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "INT",
-            "ProductLicenses": [],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "c4801e8a-cb58-4c35-aca6-f2dcc106f287",
-            "StringId": "INFORMATION_BARRIERS",
-            "Name": "Information Barriers",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "INFORMATION_BARRIERS",
-            "ProductLicenses": [
-                "SPE_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "c4da7f8a-5ee2-4c99-a7e1-87d2df57f6fe",
-            "StringId": "AAD_BASIC",
-            "Name": "MICROSOFT AZURE ACTIVE DIRECTORY BASIC",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "AAD",
-            "ProductLicenses": [
-                "AAD_BASIC"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "c63d4d19-e8cb-460e-b37c-4d6c34603745",
-            "StringId": "OFFICEMOBILE_SUBSCRIPTION",
-            "Name": "OFFICE MOBILE APPS FOR OFFICE 365",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "OFFICE",
-            "ProductLicenses": [
-                "SPE_F1",
-                "O365_BUSINESS_ESSENTIALS",
-                "SMB_BUSINESS_ESSENTIALS",
-                "STANDARDPACK",
-                "DESKLESSPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "c68f8d98-5534-41c8-bf36-22fa496fa792",
-            "StringId": "POWERAPPS_O365_P2",
-            "Name": "POWERAPPS FOR OFFICE 365",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "POWERAPPS",
-            "ProductLicenses": [
-                "SPE_E3",
-                "ENTERPRISEPACK",
-                "DEVELOPERPACK",
-                "ENTERPRISEWITHSCAL"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "c7699d2e-19aa-44de-8edf-1736da088ca1",
-            "StringId": "SHAREPOINTSTANDARD",
-            "Name": "SharePoint Standard",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "SPO",
-            "ProductLicenses": [
-                "SPB",
-                "O365_BUSINESS_ESSENTIALS",
-                "SMB_BUSINESS_ESSENTIALS",
-                "O365_BUSINESS_PREMIUM",
-                "SMB_BUSINESS_PREMIUM",
-                "STANDARDPACK",
-                "STANDARDWOFFPACK",
-                "SHAREPOINTSTANDARD"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "c87f142c-d1e9-4363-8630-aaea9c4d9ae5",
-            "StringId": "BPOS_S_TODO_2",
-            "Name": "Microsoft To-Do (Plan 2)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "TODO",
-            "ProductLicenses": [
-                "SPE_E3",
-                "ENTERPRISEPACK",
-                "ENTERPRISEWITHSCAL"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "d1142cfd-872e-4e77-b6ff-d98ec5a51f66",
-            "StringId": "DDYN365_CDS_DYN_P2",
-            "Name": "COMMON DATA SERVICE",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "Dynamics_365_for_Operations"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "d42bdbd6-c335-4231-ab3d-c8f348d5aff5",
-            "StringId": "EXCHANGE_L_STANDARD",
-            "Name": "EXCHANGE ONLINE (P1)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EXO",
-            "ProductLicenses": [
-                "LITEPACK",
-                "LITEPACK_P2"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "d5156635-0704-4f66-8803-93258f8b2678",
-            "StringId": "Dynamics_365_for_Talent_Team_members",
-            "Name": "DYNAMICS 365 FOR TALENT TEAM MEMBERS",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_TEAM_MEMBERS"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "d56f3deb-50d8-465a-bedb-f079817ccac1",
-            "StringId": "DYN365_ENTERPRISE_P1",
-            "Name": "DYNAMICS 365 CUSTOMER ENGAGEMENT PLAN",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_PLAN1",
-                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "056a5f80-b4e0-4983-a8be-7ad254a113c9",
-            "StringId": "DYN365_ENTERPRISE_P1_IW",
-            "Name": "DYNAMICS 365 CUSTOMER ENGAGEMENT PLAN (HIDDEN)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "d736def0-1fde-43f0-a5be-e3f8b2de6e41",
-            "StringId": "IT_ACADEMY_AD",
-            "Name": "MS IMAGINE ACADEMY",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "IACADEMY",
-            "ProductLicenses": [
-                "IT_ACADEMY_AD"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "da040e0a-b393-4bea-bb76-928b3fa1cf5a",
-            "StringId": "EXCHANGE_S_ARCHIVE",
-            "Name": "EXCHANGE ONLINE ARCHIVING FOR EXCHANGE SERVER",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EXO",
-            "ProductLicenses": [
-                "EXCHANGEARCHIVE"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "da792a53-cbc0-4184-a10d-e544dd34b3c1",
-            "StringId": "ONEDRIVE_BASIC",
-            "Name": "OneDrive Basic",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "SPO",
-            "ProductLicenses": [
-                "VISIOONLINE_PLAN1",
-                "VISIOCLIENT"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "de377cbc-0019-4ec2-b77c-3f223947e102",
-            "StringId": "AAD_SMB",
-            "Name": "AZURE ACTIVE DIRECTORY",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "AAD",
-            "ProductLicenses": [
-                "SPB"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "e0287f9f-e222-4f98-9a83-f379e249159a",
-            "StringId": "POWERAPPS_O365_S1",
-            "Name": "POWERAPPS FOR OFFICE 365 K1",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "POWERAPPS",
-            "ProductLicenses": [
-                "SPE_F1",
-                "DESKLESSPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "e041597c-9c7f-4ed9-99b0-2663301576f7",
-            "StringId": "WIN10_ENT_LOC_F1",
-            "Name": "Windows 10 Enterprise E3 (local only)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "W10",
-            "ProductLicenses": [
-                "SPE_F1"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "e212cbc7-0961-4c40-9825-01117710dcb1",
-            "StringId": "FORMS_PLAN_E5",
-            "Name": "MICROSOFT FORMS (PLAN E5)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "FORMS",
-            "ProductLicenses": [
-                "SPE_E5",
-                "DEVELOPERPACK",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "e7c91390-7625-45be-94e0-e16907e03118",
-            "StringId": "Virtualization Rights for Windows 10 (E3/E5+VDA)",
-            "Name": "Windows 10 Enterprise (New)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "W10",
-            "ProductLicenses": [
-                "WIN10_VDA_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "e95bec33-7c88-4a70-8e19-b10bd9d0c014",
-            "StringId": "SHAREPOINTWAC",
-            "Name": "OFFICE ONLINE",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "SPO",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_PLAN1",
-                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
-                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
-                "DYN365_ENTERPRISE_SALES",
-                "DYN365_ENTERPRISE_TEAM_MEMBERS",
-                "SPB",
-                "SPE_E3",
-                "SPE_E5",
-                "SPE_E3_USGOV_DOD",
-                "SPE_E3_USGOV_GCCHIGH",
-                "SPE_F1",
-                "O365_BUSINESS",
-                "SMB_BUSINESS",
-                "O365_BUSINESS_ESSENTIALS",
-                "SMB_BUSINESS_ESSENTIALS",
-                "O365_BUSINESS_PREMIUM",
-                "SMB_BUSINESS_PREMIUM",
-                "STANDARDPACK",
-                "STANDARDWOFFPACK",
-                "ENTERPRISEPACK",
-                "DEVELOPERPACK",
-                "ENTERPRISEPACK_USGOV_DOD",
-                "ENTERPRISEPACK_USGOV_GCCHIGH",
                 "ENTERPRISEWITHSCAL",
                 "ENTERPRISEPREMIUM",
                 "ENTERPRISEPREMIUM_NOPSTNCONF",
-                "DESKLESSPACK",
-                "MIDSIZEPACK",
-                "OFFICESUBSCRIPTION",
-                "WACONEDRIVESTANDARD",
-                "WACONEDRIVEENTERPRISE",
-                "PROJECTPREMIUM",
-                "PROJECTONLINE_PLAN_1",
-                "PROJECTPROFESSIONAL",
-                "PROJECTONLINE_PLAN_2"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "eec0eb4f-6444-4f95-aba0-50c24d67f998",
-            "StringId": "AAD_PREMIUM_P2",
-            "Name": "AZURE ACTIVE DIRECTORY PREMIUM P2",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "AAD",
-            "ProductLicenses": [
-                "AAD_PREMIUM_P2",
-                "EMSPREMIUM",
-                "SPE_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "efb0351d-3b08-4503-993d-383af8de41e3",
-            "StringId": "MIP_S_CLP2",
-            "Name": "Information Protection for Office 365 - Premium",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "MIP",
-            "ProductLicenses": [
-                "SPE_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "efb87545-963c-4e0d-99df-69c6916d9eb0",
-            "StringId": "EXCHANGE_S_ENTERPRISE",
-            "Name": "EXCHANGE ONLINE (PLAN 2)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EXO",
-            "ProductLicenses": [
-                "EXCHANGEENTERPRISE",
-                "SPE_E3",
-                "SPE_E5",
-                "SPE_E3_USGOV_DOD",
-                "SPE_E3_USGOV_GCCHIGH",
-                "ENTERPRISEPACK",
-                "DEVELOPERPACK",
-                "ENTERPRISEPACK_USGOV_DOD",
-                "ENTERPRISEPACK_USGOV_GCCHIGH",
-                "ENTERPRISEWITHSCAL",
-                "ENTERPRISEPREMIUM",
-                "ENTERPRISEPREMIUM_NOPSTNCONF"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "f07046bd-2a3c-4b96-b0be-dea79d7cbfb8",
-            "StringId": "FORMS_PLAN_K",
-            "Name": "MICROSOFT FORMS (PLAN K)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "FORMS",
-            "ProductLicenses": [
-                "SPE_F1",
                 "DESKLESSPACK"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "f20fedf3-f3c3-43c3-8267-2bfdd51c0939",
-            "StringId": "ATP_ENTERPRISE",
-            "Name": "Office 365 Advanced Threat Protection (Plan 1)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "OATP",
-            "ProductLicenses": [
-                "SPE_E5"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "f2f49eef-4b3f-4853-809a-a055c6103fe0",
-            "StringId": "DYN365_Enterprise_Talent_Onboard_TeamMember",
-            "Name": "DYNAMICS 365 FOR TALENT - ONBOARD EXPERIENCE",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_TEAM_MEMBERS"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "f5aa7b45-8a36-4cd1-bc37-5d06dea98645",
-            "StringId": "DYNAMICS_365_FOR_OPERATIONS_TEAM_MEMBERS",
-            "Name": "Dynamics_365_for_Operations_Team_members",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_TEAM_MEMBERS"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "f815ac79-c5dd-4bcc-9b78-d97f7b817d0d",
-            "StringId": "Dynamics_365_Hiring_Free_PLAN",
-            "Name": "Dynamics 365 Hiring Free PLAN",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "Dynamics_365_for_Operations"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "ba5f0cfa-d54a-4ea0-8cf4-a7e1dc4423d8",
-            "StringId": "EMPLOYEE_SELF_SERVICE",
-            "Name": "Dynamics 365 Employee Self-Service (HIDDEN)",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "f9646fb2-e3b2-4309-95de-dc4833737456",
-            "StringId": "CRMSTANDARD",
-            "Name": "MICROSOFT DYNAMICS CRM ONLINE PROFESSIONAL",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "DYN",
-            "ProductLicenses": [
-                "CRMSTANDARD"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "fafd7243-e5c1-4a3a-9e40-495efcb1d3c3",
-            "StringId": "PROJECT_CLIENT_SUBSCRIPTION",
-            "Name": "PROJECT ONLINE DESKTOP CLIENT",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "PRJ",
-            "ProductLicenses": [
-                "DYN365_ENTERPRISE_PLAN1",
-                "PROJECTCLIENT",
-                "PROJECTPREMIUM",
-                "PROJECTPROFESSIONAL",
-                "PROJECTONLINE_PLAN_2"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "fc0a60aa-feee-4746-a0e3-aecfe81a38dd",
-            "StringId": "SQL_IS_SSIM",
-            "Name": "MICROSOFT POWER BI INFORMATION SERVICES PLAN 1",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "POWERBI",
-            "ProductLicenses": [
-                "POWER_BI_ADDON"
-            ],
-            "RequiredServicePlans": []
-        },
-        {
-            "Guid": "fc52cc4b-ed7d-472d-bbe7-b081c23ecc56",
-            "StringId": "EXCHANGE_S_STANDARD_MIDMARKET",
-            "Name": "EXCHANGE ONLINE PLAN 1",
-            "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "EXO",
-            "ProductLicenses": [
-                "MIDSIZEPACK"
             ],
             "RequiredServicePlans": []
         },
@@ -2081,7 +1841,6 @@
             "StringId": "TEAMS_AR_DOD",
             "Name": "Microsoft Teams for DOD (AR)",
             "Aliases": [],
-            "Weight": 100,
             "BelongsToProduct": "TEAMS",
             "ProductLicenses": [
                 "SPE_E3_USGOV_DOD",
@@ -2090,18 +1849,175 @@
             "RequiredServicePlans": []
         },
         {
-            "Guid": "fe71d6c3-a2ea-4499-9778-da042bf08063",
-            "StringId": "SHAREPOINT_PROJECT",
-            "Name": "PROJECT ONLINE SERVICE",
+            "Guid": "9953b155-8aef-4c56-92f3-72b0487fce41",
+            "StringId": "TEAMS_AR_GCCHIGH",
+            "Name": "Microsoft Teams for GCCHigh (AR)",
             "Aliases": [],
-            "Weight": 100,
-            "BelongsToProduct": "SPO",
+            "BelongsToProduct": "TEAMS",
             "ProductLicenses": [
-                "DYN365_ENTERPRISE_PLAN1",
-                "PROJECTPREMIUM",
-                "PROJECTONLINE_PLAN_1",
-                "PROJECTPROFESSIONAL",
-                "PROJECTONLINE_PLAN_2"
+                "SPE_E3_USGOV_GCCHIGH",
+                "ENTERPRISEPACK_USGOV_GCCHIGH"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "8e0c0a52-6a6c-4d40-8370-dd62790dcd70",
+            "StringId": "THREAT_INTELLIGENCE",
+            "Name": "OFFICE 365 ADVANCED THREAT PROTECTION (PLAN 2)",
+            "Aliases": [],
+            "BelongsToProduct": "OATP",
+            "ProductLicenses": [
+                "SPE_E5",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "2bdbaf8f-738f-4ac7-9234-3c3ee2ce7d0f",
+            "StringId": "VISIOONLINE",
+            "Name": "Visio Online",
+            "Aliases": [],
+            "BelongsToProduct": "VISIO",
+            "ProductLicenses": [
+                "VISIOONLINE_PLAN1",
+                "VISIOCLIENT"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "663a804f-1c30-4ff0-9915-9db84f0d1cea",
+            "StringId": "VISIO_CLIENT_SUBSCRIPTION",
+            "Name": "Visio Professional",
+            "Aliases": [],
+            "BelongsToProduct": "VISIO",
+            "ProductLicenses": [
+                "VISIOCLIENT"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "e7c91390-7625-45be-94e0-e16907e03118",
+            "StringId": "Virtualization Rights for Windows 10 (E3/E5+VDA)",
+            "Name": "Windows 10 Enterprise (New)",
+            "Aliases": [],
+            "BelongsToProduct": "W10",
+            "ProductLicenses": [
+                "WIN10_VDA_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "36b29273-c6d0-477a-aca6-6fbe24f538e3",
+            "StringId": "WHITEBOARD_FIRSTLINE1",
+            "Name": "Whiteboard (Firstline)",
+            "Aliases": [],
+            "BelongsToProduct": "WHITEBOARD",
+            "ProductLicenses": [
+                "SPE_F1"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "4a51bca5-1eff-43f5-878c-177680f191af",
+            "StringId": "WHITEBOARD_PLAN3",
+            "Name": "Whiteboard (Plan 3)",
+            "Aliases": [],
+            "BelongsToProduct": "WHITEBOARD",
+            "ProductLicenses": [
+                "SPE_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "e041597c-9c7f-4ed9-99b0-2663301576f7",
+            "StringId": "WIN10_ENT_LOC_F1",
+            "Name": "Windows 10 Enterprise E3 (local only)",
+            "Aliases": [],
+            "BelongsToProduct": "W10",
+            "ProductLicenses": [
+                "SPE_F1"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "21b439ba-a0ca-424f-a6cc-52f954a5b111",
+            "StringId": "WIN10_PRO_ENT_SUB",
+            "Name": "WINDOWS 10 ENTERPRISE",
+            "Aliases": [],
+            "BelongsToProduct": "W10",
+            "ProductLicenses": [
+                "SPE_E3",
+                "SPE_E5",
+                "WIN10_PRO_ENT_SUB"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "8e229017-d77b-43d5-9305-903395523b99",
+            "StringId": "WINBIZ",
+            "Name": "WINDOWS 10 BUSINESS",
+            "Aliases": [],
+            "BelongsToProduct": "W10",
+            "ProductLicenses": [
+                "SPB"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "871d91ec-ec1a-452b-a83f-bd76c7d770ef",
+            "StringId": "WINDEFATP",
+            "Name": "Microsoft Defender Advanced Threat Protection",
+            "Aliases": [],
+            "BelongsToProduct": "W10",
+            "ProductLicenses": [
+                "SPE_E5",
+                "WIN10_VDA_E5"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "2078e8df-cff6-4290-98cb-5408261a760a",
+            "StringId": "YAMMER_EDU",
+            "Name": "Yammer for Education (HIDDEN)",
+            "Aliases": [],
+            "BelongsToProduct": "YAM",
+            "ProductLicenses": [],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "7547a3fe-08ee-4ccb-b430-5077c5041653",
+            "StringId": "YAMMER_ENTERPRISE",
+            "Name": "Yammer Enterprise",
+            "Aliases": [],
+            "BelongsToProduct": "YAM",
+            "ProductLicenses": [
+                "SPB",
+                "SPE_E3",
+                "SPE_E5",
+                "SPE_F1",
+                "O365_BUSINESS_ESSENTIALS",
+                "O365_BUSINESS_PREMIUM",
+                "STANDARDPACK",
+                "STANDARDWOFFPACK",
+                "ENTERPRISEPACK",
+                "ENTERPRISEWITHSCAL",
+                "ENTERPRISEPREMIUM",
+                "ENTERPRISEPREMIUM_NOPSTNCONF",
+                "DESKLESSPACK"
+            ],
+            "RequiredServicePlans": []
+        },
+        {
+            "Guid": "41bf139a-4e60-409f-9346-a1361efc6dfb",
+            "StringId": "YAMMER_MIDSIZE",
+            "Name": "Yammer Midsize",
+            "Aliases": [],
+            "BelongsToProduct": "YAMMER",
+            "ProductLicenses": [
+                "SMB_BUSINESS_ESSENTIALS",
+                "SMB_BUSINESS_PREMIUM",
+                "MIDSIZEPACK"
             ],
             "RequiredServicePlans": []
         }

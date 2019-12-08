@@ -214,7 +214,7 @@ This layer consists of two parts:
 
 Access to a single Microsoft online service is given to the user by enabling a service plan for it.
 
-The service plan also describes what kind of features this user will be able to use within the service. However, those features are prefined by Microsoft and therefore can not be changed. This is why the service layer mainly consists of the service plans. However, during license procurement it is often required to know how a particular feature that any of the stakeholders has requested can be purchased. See [part 2](#part-2-feature) below for further explanation.
+The service plan also describes what kind of features this user will be able to use within the service. However, those features are prefined by Microsoft and therefore can not be changed. This is why the service layer mainly consists of the service plans. However, during license procurement it is often required to know how a specific feature that any of the stakeholders has requested can be purchased. See [part 2](#part-2-feature) below for further explanation.
 
 Depending on the actual service, there can be excluding service plans that you cannot enable for a single user at the same time. This is because otherwise their different feature sets will interfere with each other. Some services might handle this gently and will automatically detect the highest feature set that ultimately should be enabled for the user (e.g. Azure Active Directory). However, most of the services don't and probably never will due the historical architecture of that service. Microsoft APIs will usually not let you enable conflicting service plans at the same time.
 Note that this kind of conflicts are defined on the declarative layer 1, altough they seem to become relevant only on this 3rd layer.
@@ -222,7 +222,7 @@ On the other hand, there can also be additive service plans which will enable mo
 
 ### Part 2: Features
 
-It is often hard to identify which particular features of a service are included in which available service plans and therefore which product licenses could be considered to make a particular feature available to users.
+It is often hard to identify which particular features of a service are included in which available service plans and therefore which product licenses could be considered to make a specific feature available to users.
 
 Also, there can be confusion about features because they sometimes are identified as a service by their own or mixed up being a separate product. Microsoft marketing talk is of no help here and even makes it more complicated and confusing.
 

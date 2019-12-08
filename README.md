@@ -159,7 +159,7 @@ Service plans of _Azure Active Directory Premium P2:_
 
 So, let's bring all defined terms and available info into a technical file structure.
 
-Currently, four database files in JSON format represent the different layers to describe Microsoft products, licenses, their assigned services, and containing features.
+Currently, five database files in JSON format represent the different layers to describe Microsoft products, licenses, their assigned services, and containing features.
 
 `````
       DECLARATIVE                 STOCK                             SERVICE

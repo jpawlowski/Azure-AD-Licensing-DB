@@ -58,8 +58,8 @@
             "Name": "Azure Active Directory Premium (Plan 2)",
             "Aliases": [],
             "Features": [
-                "Azure AD Identity Protection",
-                "Azure AD Privileged Identity Management"
+                "AADIP",
+                "AADPIM"
             ],
             "BelongsToProduct": "AAD",
             "ProductLicenses": [

@@ -1,0 +1,399 @@
+{
+    "meta": {
+        "SchemaVersion": 1,
+        "StringId": "ProductsDb",
+        "Description": "Defines Microsoft single services/products SKUs to handle licensing conflicts."
+    },
+    "items": [
+        {
+            "Name": "Azure Active Directory",
+            "Aliases": [],
+            "StringId": "AAD",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                [
+                    "AAD_SMB",
+                    "AAD_BASIC",
+                    "AAD_PREMIUM",
+                    "AAD_PREMIUM_P2"
+                ],
+                [
+                    "MFA_PREMIUM"
+                ],
+                [
+                    "LOCKBOX_ENTERPRISE"
+                ],
+                [
+                    "PAM_ENTERPRISE"
+                ],
+                [
+                    "RMS_S_ENTERPRISE"
+                ]
+            ],
+            "ProductLicensesCombinations": [
+                "AAD_BASIC",
+                "AAD_PREMIUM",
+                "AAD_PREMIUM_P2"
+            ]
+        },
+        {
+            "Name": "Exchange Online",
+            "Aliases": [],
+            "StringId": "EXO",
+            "AddonProductLicenses": [
+                "EXCHANGEARCHIVE",
+                "EXCHANGEARCHIVE_ADDON"
+            ],
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "O365_SB_Relationship_Management"
+            ],
+            "ProductLicensesCombinations": [
+                "EXCHANGEDESKLESS",
+                "EXCHANGE_S_ESSENTIALS",
+                "EXCHANGETELCO",
+                "EXCHANGEESSENTIALS",
+                "EXCHANGESTANDARD",
+                "EXCHANGEENTERPRISE"
+            ]
+        },
+        {
+            "Name": "SharePoint Online",
+            "Aliases": [],
+            "StringId": "SPO",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Skype for Business Online",
+            "Aliases": [],
+            "StringId": "MCO",
+            "AddonProductLicenses": [],
+            "ServicePlans": [
+                "MCOMEETADV",
+                "MCOEV"
+            ],
+            "ProductLicensesCombinations": [
+                "MCOIMP",
+                "MCOSTANDARD"
+            ],
+            "ExclusiveAddonProductLicenses": [
+                [
+                    "MCOMEETADV"
+                ],
+                [
+                    "MCOEV"
+                ],
+                [
+                    "MCOPSTN1",
+                    "MCOPSTN2",
+                    "MCOPSTN5"
+                ]
+            ]
+        },
+        {
+            "Name": "Microsoft Dynamics 365",
+            "Aliases": [],
+            "StringId": "DYN",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "Dynamics_365_Onboarding_Free_PLAN",
+                "Dynamics_365_Hiring_Free_PLAN",
+                "DDYN365_CDS_DYN_P2"
+            ],
+            "ProductLicensesCombinations": [
+                "CRMPLAN2",
+                "CRMSTANDARD",
+                "DYN365_ENTERPRISE_TEAM_MEMBERS",
+                "DYN365_ENTERPRISE_SALES",
+                "DYN365_ENTERPRISE_CUSTOMER_SERVICE",
+                "DYN365_ENTERPRISE_SALES_CUSTOMERSERVICE",
+                "DYN365_ENTERPRISE_PLAN1",
+                "DYN365_FINANCIALS_BUSINESS_SKU",
+                "Dynamics_365_for_Operations"
+            ]
+        },
+        {
+            "Name": "MyAnalytics",
+            "Aliases": [],
+            "StringId": "ANALYTICS",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "EXCHANGE_ANALYTICS",
+                "MYANALYTICS_P2"
+            ],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Azure Advanced Threat Protection",
+            "Aliases": [],
+            "StringId": "ATP",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Cloud App Security",
+            "Aliases": [],
+            "StringId": "CAS",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Office 365 eDiscovery",
+            "Aliases": [],
+            "StringId": "EDISCOVERY",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Forms",
+            "Aliases": [],
+            "StringId": "FORMS",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "FORMS_PLAN_E1",
+                "FORMS_PLAN_E3",
+                "FORMS_PLAN_E5",
+                "FORMS_PLAN_K"
+            ],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Imagine Academy",
+            "Aliases": [],
+            "StringId": "IACADEMY",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": [
+                "IT_ACADEMY_AD"
+            ]
+        },
+        {
+            "Name": "Information Barriers",
+            "Aliases": [],
+            "StringId": "INFORMATION_BARRIERS",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Intune",
+            "Aliases": [],
+            "StringId": "INT",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": [
+                "INTUNE_A"
+            ]
+        },
+        {
+            "Name": "Microsoft Kaizala",
+            "Aliases": [],
+            "StringId": "KAIZALA",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "KAIZALA_O365_P1",
+                "KAIZALA_STANDALONE"
+            ]
+        },
+        {
+            "Name": "Microsoft Bookings",
+            "Aliases": [],
+            "StringId": "BOOKINGS",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "MICROSOFTBOOKINGS"
+            ],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Information Protection",
+            "Aliases": [
+                "Azure Information Protection"
+            ],
+            "StringId": "MIP",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "PREMIUM_ENCRYPTION"
+            ],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Office 365 Advanced Threat Protection",
+            "Aliases": [],
+            "StringId": "OATP",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Office Applications",
+            "Aliases": [
+                "Microsoft Office 365 ProPlus",
+                "Microsoft Office Professional",
+                "Microsoft Office Mobile"
+            ],
+            "StringId": "OFFICE",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Planner",
+            "Aliases": [],
+            "StringId": "PLANNER",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "PROJECTWORKMANAGEMENT"
+            ],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Power Automation",
+            "Aliases": [
+                "Microsoft Flow"
+            ],
+            "StringId": "FLOW",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Power Apps",
+            "Aliases": [],
+            "StringId": "POWERAPPS",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "POWERAPPS_DYN_P2",
+                "POWERAPPS_DYN_TEAM",
+                "POWERAPPS_DYN_APPS",
+                "POWERAPPS_O365_P1",
+                "POWERAPPS_O365_P2",
+                "POWERAPPS_O365_P3",
+                "POWERAPPS_O365_S1"
+            ],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Power BI",
+            "Aliases": [],
+            "StringId": "POWERBI",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Project Online",
+            "Aliases": [],
+            "StringId": "PRJO",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "PROJECT_CLIENT_SUBSCRIPTION"
+            ],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Search",
+            "Aliases": [
+                "Bing for Business"
+            ],
+            "StringId": "SEARCH",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Staff Hub",
+            "Aliases": [],
+            "StringId": "SHUB",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "Deskless"
+            ],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Stream",
+            "Aliases": [],
+            "StringId": "STREAM",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "STREAM_O365_K",
+                "STREAM_O365_E1",
+                "STREAM_O365_E3",
+                "STREAM_O365_E5"
+            ],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Sway",
+            "Aliases": [],
+            "StringId": "SWAY",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Teams",
+            "Aliases": [],
+            "StringId": "TEAMS",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft To-Do",
+            "Aliases": [
+                "Wunderlist"
+            ],
+            "StringId": "TODO",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "BPOS_S_TODO_1",
+                "BPOS_S_TODO_2",
+                "BPOS_S_TODO_3",
+                "BPOS_S_TODO_FIRSTLINE"
+            ],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Visio Online",
+            "Aliases": [],
+            "StringId": "VISO",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Windows 10",
+            "Aliases": [],
+            "StringId": "W10",
+            "ProductLicenses": [],
+            "ServicePlans": [
+                "WINDEFATP",
+                "Virtualization Rights for Windows 10 (E3/E5+VDA)"
+            ],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Microsoft Whiteboard",
+            "Aliases": [],
+            "StringId": "WHITEBOARD",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        },
+        {
+            "Name": "Yammer",
+            "Aliases": [],
+            "StringId": "YAM",
+            "ProductLicenses": [],
+            "ServicePlans": [],
+            "ProductLicensesCombinations": []
+        }
+    ]
+}

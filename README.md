@@ -9,6 +9,9 @@
     * [Package](#package)
     * [Product license](#product-license)
     * [Service plan](#service-plan)
+* [Graphical explanation](#graphical-explanation)
+    * [Non-technical diagram](#non-technical-diagram)
+    * [Technical diagram](#technical-diagram)
 * [File structure](#file-structure)
     * [1. Declarative layer](#1-declarative-layer)
     * [2. Stock layer](#2-stock-layer)
@@ -173,6 +176,40 @@ Service plans of _Azure Active Directory Premium P2:_
 - Cloud App Security Discovery
 - Microsoft Azure Multi-Factor Authentication
 
+# Graphical explanation
+
+## Non-technical diagram
+
+The following flow diagram shall explain the relationships between the defined terms above in a non-technical matter:
+
+`````
++-------+                           +--------+                   +----------------+                        +--------+
+|Product|  consists of one or many  |Services|  has one or many  |Service variants|  provides one or many  |Features|
++-------+ +-----------------------> +--------+ +---------------> +----------------+ +--------------------> +--------+
+`````
+
+`````
++-------+                    +--------+                   +----------------+                        +--------+
+|Package|  consists of many  |Services|  has one or many  |Service variants|  provides one or many  |Features|
++-------+ +----------------> +--------+ +---------------> +----------------+ +--------------------> +--------+
+`````
+
+## Technical diagram
+
+The following flow diagram shall explain the relationships between the defined terms above in a more technical manner, but still on a higher level:
+
+`````
++-------+                                 +----------------+                           +-------------+                        +--------+
+|Product|  is represented by one or many  |Product licenses|  consists of one or many  |Service plans|  contains one or many  |Features|
++-------+ +-----------------------------> +----------------+ +-----------------------> +-------------+ +--------------------> +--------+
+`````
+
+`````
++-------+                                 +----------------+                           +-------------+                        +--------+
+|Package|  is represented by one or many  |Product licenses|  consists of one or many  |Service plans|  contains one or many  |Features|
++-------+ +-----------------------------> +----------------+ +-----------------------> +-------------+ +--------------------> +--------+
+`````
+
 # File structure
 
 So, let's bring all defined terms and available info into a technical file structure.
@@ -200,7 +237,7 @@ Some attribute values are supposed to be static and cannot be changed per defini
 
 ## 1. Declarative layer
 
-This is how Microsoft advertises their online services as products. It is an abstraction from the stock keeping layer to combine different variations of the same product into a single entity.
+This is how Microsoft advertises their online services as products. It is an abstraction from the stock keeping layer to combine different variants of the same product into a single entity.
 A single entity will help to (programmatically) compare different variants with each other and handle conflicts between them. On this layer, a conflict is mostly caused by logic, i.e. it shall be avoided to over-license a user for cost efficiency.
 
 There is currently two ways that Microsoft will sell their products to you:

@@ -180,7 +180,7 @@ Service plans of _Azure Active Directory Premium P2:_
 
 ## Non-technical diagram
 
-The following flow diagram shall explain the relationships between the defined terms above in a non-technical matter:
+The following flow diagram shall explain the relationships between the defined terms above in a non-technical manner:
 
 `````
 +-------+                           +--------+                   +----------------+                        +--------+

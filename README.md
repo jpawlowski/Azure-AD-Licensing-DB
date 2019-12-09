@@ -189,14 +189,14 @@ Currently, five database files in JSON format represent the different layers to 
 +-------------------+     +-------------------+     +----------------+----------------------+
 `````
 
-The attribute 'StringId' is used as an anchor (primary key, if you think in SQL structure) to connect the dots between three different layers.
+The attribute `StringId` is used as an anchor (primary key, if you think in SQL structure) to connect the dots between three different layers.
 Some attribute values are supposed to be static and cannot be changed per definition:
 
 1. Microsoft static definitions
-    - 'Guid'
-    - 'StringId'
+    - `Guid`
+    - `StringId`
 2. Self-declared static definitions
-    - 'Shortname' (as change might result in changed behavior when used in licensing automations, e.g. within group names)
+    - `Shortname` (as change might result in changed behavior when used in licensing automations, e.g. within group names)
 
 ## 1. Declarative layer
 
@@ -208,7 +208,7 @@ There is currently two ways that Microsoft will sell their products to you:
 1. As a package / bundle of multiple services (for example, _Microsoft 365_, _Office 365_, _Enterprise Mobility + Security_)
 2. As a single product/service (for example, _Azure Active Directory Premium_, _Exchange Online_, _SharePoint Online_)
 
-While both files 'PackagesDb' and 'ProductsDb' will serve a similar purpose, the actual combination of product licenses they include are totally different. While 'PackagesDb' represents bundles that Microsoft offers to you for saving money when you want to use multiple services at once, the 'ProductsDb' will basically represent a single entity for each service that Microsoft has in their portfolio and that you can purchase separately.
+While both files `PackagesDb` and `ProductsDb` will serve a similar purpose, the actual combination of product licenses they include are totally different. While `PackagesDb` represents bundles that Microsoft offers to you for saving money when you want to use multiple services at once, the `ProductsDb` will basically represent a single entity for each service that Microsoft has in their portfolio and that you can purchase separately.
 
 ## 2. Stock layer
 
@@ -218,13 +218,13 @@ There can be different variants and combinations addressing the same service, bu
 
 Please note that not every SKU can be purchased by everybody. Most often, availability of an SKU depends on your institutional status (e.g. corporation, education, or public sector). Procurement and ways of distribution is not a big topic here as this is mainly about receiving different prizes for the same SKU and may be up to your volume of licenses and your negotiation capabilities.
 
-Technically, items in the file 'ProductLicensesDb' do simply represent a combination of service plans from layer 3.
+Technically, items in the file `ProductLicensesDb` do simply represent a combination of service plans from layer 3.
 
 ## 3. Service layer
 
 The service layer is the most interesting one as this highly affects what features a user may use within a service. Therefore, this is the most important part when licensing a user for Microsoft online services as it will have immediate impact on your end-user experience.
 
-Usually, this is the layer where you would start planning what you want your users to be able to use. Every item in 'ServicePlansDb' represents a feature set of a Microsoft online service that you can choose from. Once you have made your choices, the attribute 'ProductLicenses' will give you a first indicator about your options to purchase this particular set of features for the respective service.
+Usually, this is the layer where you would start planning what you want your users to be able to use. Every item in `ServicePlansDb` represents a feature set of a Microsoft online service that you can choose from. Once you have made your choices, the attribute `ProductLicenses` will give you a first indicator about your options to purchase this particular set of features for the respective service.
 
 This layer consists of two parts:
 
@@ -236,7 +236,7 @@ The service plan also describes what kind of features this user will be able to 
 
 Depending on the actual service, there can be excluding service plans that you cannot enable for a single user at the same time. This is because otherwise their different feature sets will interfere with each other. Some services might handle this gently and will automatically detect the highest feature set that ultimately should be enabled for the user (e.g. Azure Active Directory). However, most of the services don't and probably never will due the historical architecture of that service. Microsoft APIs will usually not let you enable conflicting service plans at the same time.
 Note that this kind of conflicts are defined on the declarative layer 1, although they seem to become relevant only on this 3rd layer.
-On the other hand, there can also be additive service plans which will enable more features for the user. Usually this causes a dependency to have another service plan for that particular service enabled first. This is what is described directly within the 'ServicePlansDb' file using the attribute 'RequiredServicePlans'.
+On the other hand, there can also be additive service plans which will enable more features for the user. Usually this causes a dependency to have another service plan for that particular service enabled first. This is what is described directly within the `ServicePlansDb` file using the attribute `RequiredServicePlans`.
 
 ### Part 2: Service features
 
@@ -244,7 +244,7 @@ It is often hard to identify which particular features of a service are included
 
 Also, there can be confusion about features because they are sometimes identified as a service by their own or mixed up being a separate product. Microsoft marketing talk is of no help here and even makes it more complicated and confusing.
 
-The file 'ServiceFeaturesDb' is supposed to help with this and has a one-to-many relation to items in file 'ServicePlansDb'.
+The file `ServiceFeaturesDb` is supposed to help with this and has a one-to-many relation to items in file `ServicePlansDb`.
 
 # Credits
 
@@ -274,12 +274,12 @@ Also, there for sure are a lot of product licenses and service plans missing fro
 
 Please make sure to always include these attributes:
 
-1. 'Guid' - Unique identifier as defined by Microsoft
-2. 'StringId' - Static textual identifier alias as defined by Microsoft
-3. 'Name' - Current display name used in Microsoft Azure Portal
-4. 'Aliases' - Any known aliases for the display name that might have been used in the past, e.g. before a product or service was renamed or rebranded
-5. 'DistributionStatus' - In case of a product license, is it still available for sale?
+1. `Guid` - Unique identifier as defined by Microsoft
+2. `StringId` - Static textual identifier alias as defined by Microsoft
+3. `Name` - Current display name used in Microsoft Azure Portal
+4. `Aliases` - Any known aliases for the display name that might have been used in the past, e.g. before a product or service was renamed or rebranded
+5. `DistributionStatus` - In case of a product license, is it still available for sale?
 
 ## Missing details about features of a service plan
 
-Do you know more about features that are included into a particular service plan? That's great! I encourage you to open a [ticket](https://github.com/jpawlowski/Azure-AD-Licensing-DB/issues) to have this added to the 'ServiceFeaturesDb' file or even create a [pull request](https://github.com/jpawlowski/Azure-AD-Licensing-DB/pulls) by yourself (will automatically give you credits and reputation on Github ;-)).
+Do you know more about features that are included into a particular service plan? That's great! I encourage you to open a [ticket](https://github.com/jpawlowski/Azure-AD-Licensing-DB/issues) to have this added to the `ServiceFeaturesDb` file or even create a [pull request](https://github.com/jpawlowski/Azure-AD-Licensing-DB/pulls) by yourself (will automatically give you credits and reputation on Github ;-)).

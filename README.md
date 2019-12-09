@@ -130,7 +130,7 @@ A package can also be a synonym for a [product license](#product-license) (see b
 
 ## Product license
 
-This is the billing level of Microsoft online products and services. It is a collection of service plans (see [below](#service-plan)) that are bundled together in order to sell them as a single product. There could be different varieties of product license plans, offering the same service with a different feature set, or in different combinations.
+This is the billing level of Microsoft online products and services. It is a collection of service plans (see [below](#service-plan)) that are bundled together in order to sell them as a single product. There could be different variants of product license plans, offering the same service with a different feature set, or in different combinations.
 
 Product license plans are assigned to users either directly or indirectly, using group-based licensing.
 

@@ -183,15 +183,15 @@ Service plans of _Azure Active Directory Premium P2:_
 The following flow diagram shall explain the relationships between the defined terms above in a non-technical manner:
 
 `````
-+-------+                           +--------+                   +----------------+                        +--------+
-|Product|  consists of one or many  |Services|  has one or many  |Service variants|  provides one or many  |Features|
-+-------+ +-----------------------> +--------+ +---------------> +----------------+ +--------------------> +--------+
++-------+                          +--------+                  +----------------+                       +--------+
+|Product| consists of one or many  |Services| has one or many  |Service variants| provides one or many  |Features|
++-------+------------------------> +--------+----------------> +----------------+---------------------> +--------+
 `````
 
 `````
-+-------+                    +--------+                   +----------------+                        +--------+
-|Package|  consists of many  |Services|  has one or many  |Service variants|  provides one or many  |Features|
-+-------+ +----------------> +--------+ +---------------> +----------------+ +--------------------> +--------+
++-------+                   +--------+                  +----------------+                       +--------+
+|Package| consists of many  |Services| has one or many  |Service variants| provides one or many  |Features|
++-------+-----------------> +--------+----------------> +----------------+---------------------> +--------+
 `````
 
 ## Technical diagram
@@ -199,15 +199,15 @@ The following flow diagram shall explain the relationships between the defined t
 The following flow diagram shall explain the relationships between the defined terms above in a more technical manner, but still on a higher level:
 
 `````
-+-------+                                 +----------------+                           +-------------+                        +--------+
-|Product|  is represented by one or many  |Product licenses|  consists of one or many  |Service plans|  contains one or many  |Features|
-+-------+ +-----------------------------> +----------------+ +-----------------------> +-------------+ +--------------------> +--------+
++-------+                                +----------------+                          +-------------+                       +--------+
+|Product| is represented by one or many  |Product licenses| consists of one or many  |Service plans| contains one or many  |Features|
++-------+------------------------------> +----------------+------------------------> +-------------+---------------------> +--------+
 `````
 
 `````
-+-------+                                 +----------------+                           +-------------+                        +--------+
-|Package|  is represented by one or many  |Product licenses|  consists of one or many  |Service plans|  contains one or many  |Features|
-+-------+ +-----------------------------> +----------------+ +-----------------------> +-------------+ +--------------------> +--------+
++-------+                                +----------------+                          +-------------+                       +--------+
+|Package| is represented by one or many  |Product licenses| consists of one or many  |Service plans| contains one or many  |Features|
++-------+------------------------------> +----------------+------------------------> +-------------+---------------------> +--------+
 `````
 
 # File structure
